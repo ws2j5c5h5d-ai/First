@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "minimax-skills": {
+      "source": {
+        "source": "github",
+        "repo": "MiniMax-AI/skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "minimax-skills@minimax-skills": true
+  }
+}
