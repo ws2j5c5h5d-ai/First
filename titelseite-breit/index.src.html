@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NWZ Göppinger Kreisnachrichten, 13. August 1979</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wdth,wght@75..100,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#141414;
+    --paper:#fdfcf8;
+    --grey:#d9d8d3;
+    --rule:#1b1b1b;
+    --g:16px;               /* Spaltenabstand */
+    --body:10.9px;
+    --lead:1.3;
+  }
+  *{box-sizing:border-box}
+  html{background:#e9e8e3}
+  body{margin:0;padding:24px 0;color:var(--ink);font-family:"Source Serif 4",Georgia,"Times New Roman",serif}
+  .page{
+    width:1180px;margin:0 auto;background:var(--paper);padding:26px 30px 30px;
+    box-shadow:0 2px 18px rgba(0,0,0,.18);
+  }
+  @media print{ html,body{background:#fff;padding:0} .page{box-shadow:none;margin:0} }
+
+  /* ---------- Kopf ---------- */
+  .mast{display:grid;grid-template-columns:330px 1fr;column-gap:36px;align-items:start;position:relative;height:178px}
+  .logo{padding-top:6px}
+  .nwz{
+    font-family:"Archivo Black","Arial Black",Impact,sans-serif;font-size:92px;line-height:.9;letter-spacing:-1px;
+    color:#fff;-webkit-text-stroke:2.4px var(--ink);paint-order:stroke fill;
+    text-shadow:2px 2px 0 var(--ink),3px 3px 0 var(--ink),4px 4px 0 var(--ink),5px 5px 0 var(--ink),6px 6px 0 var(--ink),7px 7px 0 var(--ink);
+    transform:skewX(-6deg);display:block;margin:2px 0 14px 4px;
+  }
+  .imprint{font-family:"Source Serif 4",serif;font-size:8.6px;line-height:1.34;font-weight:700;color:#222;max-width:336px;text-align:justify;hyphens:manual}
+  .title{position:relative;padding-top:8px}
+  .fraktur{font-family:"UnifrakturCook","Old English Text MT",serif;font-weight:700;font-size:66px;line-height:1;margin:0;letter-spacing:.2px;white-space:nowrap}
+  .sub{font-family:"Source Serif 4",serif;font-weight:700;letter-spacing:.34em;font-size:15.5px;margin:12px 0 0 6px;white-space:nowrap}
+  .tag{display:flex;align-items:center;gap:26px;margin-top:20px;font-size:9.6px;font-weight:700;font-style:italic}
+  .stamp{
+    position:absolute;right:6px;top:68px;width:200px;height:84px;border:3px solid var(--ink);transform:rotate(-5deg);
+    background:var(--paper);display:flex;align-items:center;justify-content:center;text-align:center;
+    font-family:"Archivo",Arial,sans-serif;font-stretch:80%;font-weight:800;font-size:25px;line-height:1.05;color:#333;
+  }
+  .dateline{
+    display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;column-gap:60px;
+    border-top:2.4px solid var(--ink);border-bottom:1.2px solid var(--ink);padding:5px 4px;
+    font-family:"Archivo",Arial,sans-serif;font-weight:700;font-size:12px;position:relative;
+  }
+  .dateline:before{content:"";position:absolute;left:0;right:0;bottom:-5px;border-bottom:1.2px solid var(--ink)}
+  .dateline .no{font-size:11.4px}
+  .dateline .pr{font-weight:500}
+  .dateline .code{font-size:17px;font-weight:800}
+  .dateline .dt{font-size:12.6px}
+
+  /* ---------- Raster ---------- */
+  .body{display:grid;grid-template-columns:repeat(6,1fr);margin-top:20px;align-items:stretch}
+  .stack{padding:0 calc(var(--g)/2);border-left:1.2px solid var(--rule);min-width:0}
+  .stack:first-child{border-left:0;padding-left:0}
+  .stack:last-child{padding-right:0}
+  .c1{grid-column:span 1}.c3{grid-column:span 3}.c2{grid-column:span 2}
+
+  p{margin:0;font-size:var(--body);line-height:var(--lead);text-align:justify;hyphens:manual}
+  p+p{text-indent:1.1em}
+  .txt{column-gap:var(--g);column-rule:1.2px solid var(--rule)}
+  .txt.k2{column-count:2}.txt.k3{column-count:3}
+  .bold p,.bold{font-weight:700}
+  .lead-p{font-weight:700}
+  .lead-p+p{text-indent:1.1em}
+
+  .sans{font-family:"Archivo","Helvetica Neue",Arial,sans-serif}
+  h1,h2,h3,h4{margin:0;font-family:"Archivo","Helvetica Neue",Arial,sans-serif;font-stretch:78%;font-weight:800;line-height:1.02;letter-spacing:-.01em}
+
+  /* Aufmacher */
+  .kicker{font-family:"Archivo",Arial,sans-serif;font-stretch:88%;font-weight:800;font-size:15px;padding-bottom:5px;border-bottom:1.8px solid var(--ink);margin-bottom:12px;letter-spacing:.005em}
+  .top h1{font-size:43px;line-height:1.04;letter-spacing:-.02em;margin-bottom:12px;font-weight:700}
+  .top .deck{font-family:"Archivo",Arial,sans-serif;font-stretch:88%;font-weight:700;font-size:14px;text-align:center;margin:0 0 12px}
+  .top .txt{margin-bottom:0}
+
+  .band{margin-top:16px;padding-top:12px}
+  h2.hl{font-size:25px;margin:0 0 10px;font-weight:700}
+  h2.hl.mid{text-align:left}
+  h2.hl.big{font-size:36px;text-align:center;margin-bottom:7px}
+  .deck2{font-family:"Archivo",Arial,sans-serif;font-stretch:88%;font-weight:700;font-size:14px;text-align:center;margin:0 0 10px;line-height:1.15}
+
+  /* Auf einen Blick */
+  .box-title{border:1.6px solid var(--ink);border-bottom-width:1.6px;background:var(--grey);padding:8px 10px 7px;margin-bottom:10px}
+  .box-title h2{font-size:21px;line-height:1.02;font-stretch:80%;font-weight:800}
+  .blick h3{font-size:14px;text-align:center;margin:13px 0 6px;font-stretch:85%;font-weight:800}
+  .blick h3:first-of-type{margin-top:4px}
+  .blick p{font-size:10.6px;line-height:1.3}
+  .blick{border:1.6px solid var(--ink);padding:0 9px 12px;margin-top:-1px}
+
+  /* Sport */
+  .sportbanner{background:var(--grey);border:1.6px solid var(--ink);padding:5px 10px 4px;text-align:left}
+  .sportbanner h2{font-size:20px;font-stretch:82%;font-weight:800}
+  .photo{display:block;width:100%;height:auto;margin-top:5px;filter:contrast(1.04)}
+  .cap{font-family:"Archivo",Arial,sans-serif;font-stretch:88%;font-weight:500;font-size:9.4px;line-height:1.25;margin:5px 0 10px}
+  .sport2{display:grid;grid-template-columns:1fr 1fr;column-gap:var(--g)}
+  .sport2>div{min-width:0}
+  .sport2>div+div{border-left:1.2px solid var(--rule);padding-left:calc(var(--g)/2);margin-left:calc(var(--g)/-2)}
+  .sport2>div:first-child{padding-right:calc(var(--g)/2)}
+  .sport2 h3{font-size:16px;text-align:center;margin:0 0 7px;font-stretch:80%;font-weight:800;line-height:1.05}
+  .sport2 p{font-size:10.6px;line-height:1.3}
+
+  .lotto-h{border:1.6px solid var(--ink);background:var(--grey);text-align:center;padding:5px 4px 4px;margin:14px 0 6px}
+  .lotto-h h3{font-size:14.5px;font-stretch:84%;font-weight:800}
+  .lotto{font-family:"Archivo",Arial,sans-serif;font-stretch:90%;font-size:9.6px;line-height:1.28;font-weight:500;text-align:justify;hyphens:none}
+  .lotto b{font-weight:800}
+  .lotto .nums{letter-spacing:.04em}
+  .lotto .og{text-align:right;margin-top:3px}
+  .lotto div{margin:0}
+
+  .kurz-h{background:#323232;color:#fff;text-align:center;padding:5px 4px 5px;margin:16px 0 8px}
+  .kurz-h h3{font-size:16px;font-stretch:82%;font-weight:700;letter-spacing:.01em}
+  .kurz h4{font-size:13px;font-stretch:88%;font-weight:800;margin:9px 0 3px;line-height:1.1}
+  .kurz h4:first-of-type{margin-top:2px}
+  .kurz p{font-size:10.6px;line-height:1.3}
+  .kurz p.b{font-weight:700}
+
+  .stack.c2{display:flex;flex-direction:column}
+  .eil .heute p{column-count:2;column-gap:var(--g);column-rule:1.2px solid var(--rule)}
+  .eil .heute{display:flex;flex-direction:column;justify-content:center;padding:12px 14px}
+  .eil{margin-top:16px;flex:1;display:flex;flex-direction:column}
+  .eil .heute{flex:1}
+  .eil .heute h4{font-size:26px;line-height:1.1;margin-bottom:10px}
+  .heute-h{background:#323232;color:#fff;text-align:center;padding:4px 4px 6px}
+  .heute-h h3{font-size:22px;font-stretch:85%;font-weight:700}
+  .heute{border:1.6px solid var(--ink);border-top:0;padding:10px 9px 10px}
+  .heute h4{font-family:"Archivo",Arial,sans-serif;font-stretch:90%;font-weight:600;font-size:17px;text-align:center;margin:0 0 8px;letter-spacing:-.005em}
+  .heute p{font-family:"Archivo",Arial,sans-serif;font-stretch:92%;font-weight:500;font-size:10.5px;line-height:1.3}
+
+  /* Unterer Streifen */
+  .bottom{display:grid;grid-template-columns:repeat(6,1fr);margin-top:20px;padding-top:16px;border-top:1.2px solid var(--rule)}
+  .story{padding:0 calc(var(--g)/2);border-left:1.2px solid var(--rule);min-width:0}
+  .story:first-child{border-left:0;padding-left:0}.story:last-child{padding-right:0}
+  .story h2{font-size:24px;font-weight:700;margin-bottom:5px}
+  .story .deck2{text-align:left;font-size:13.2px;margin-bottom:9px}
+  .story.center h2,.story.center .deck2{text-align:center}
+  .story .txt p{font-size:10.6px}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ===== Kopf ===== -->
+  <header class="mast">
+    <div class="logo">
+      <span class="nwz" aria-label="NWZ">NWZ</span>
+      <div class="imprint">Redaktion und Anzeigenverwaltung: 7320 Göppingen, Rosenstraße 24. Postfach: 1469. Telefon (0 71 61) 61 81. Fernschreiber: 0 72 78 81. Bezugspreis monatlich mit NWZ Illustrierte Wochenzeitung DM 15,80 einschließlich Trägergebühr u. 6,5 % Mehrwertsteuer. Postbezug DM 16,30.</div>
+    </div>
+    <div class="title">
+      <h1 class="fraktur">Göppinger Kreisnachrichten</h1>
+      <div class="sub">NEUE WÜRTTEMBERGISCHE ZEITUNG</div>
+      <div class="tag">
+        <span>Unabhängige Tageszeitung</span>
+        <svg width="40" height="48" viewBox="0 0 40 48" role="img" aria-label="Wappen">
+          <defs><pattern id="st" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#8a8a8a"/><rect width="1.2" height="3" fill="#3a3a3a"/></pattern></defs>
+          <path d="M3 3H37V30C37 40 29 45 20 46C11 45 3 40 3 30Z" fill="#fff" stroke="#141414" stroke-width="2"/>
+          <rect x="3" y="3" width="34" height="15" fill="url(#st)" stroke="#141414" stroke-width="1.6"/>
+          <g fill="none" stroke="#141414" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 38C9 31 11 28 13 27M13 27C12 25 11.5 24 12 22M13 27C15 26 17 27 17 29M16 39C16 33 17.5 30 20 29M20 29C19 27 19 25.5 20 23.5M20 29C23 28 25 29 25.5 31M24 38C27 36 30 33 31 28M30 33C32 32 33 32 34.5 31"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="stamp">Heute<br>großer Sportteil</div>
+  </header>
+
+  <div class="dateline">
+    <span class="no">34. Jahrgang, Nr. 185</span>
+    <span class="pr">Einzelpreis 70 Pf (Sa. 90 Pf)</span>
+    <span class="dt">Montag, 13. August 1979</span>
+    <span class="code">E 5403 A</span>
+  </div>
+
+  <!-- ===== Hauptteil ===== -->
+  <main class="body">
+
+    <!-- Spalte links -->
+    <aside class="stack c1">
+      <div class="box-title"><h2>Auf einen<br>Blick</h2></div>
+      <div class="blick">
+        <h3>Benzin billiger?</h3>
+        <p>Bundeswirtschaftsminister Lambsdorff schließt nicht aus, daß die Preise für Benzin in nächster Zeit wieder etwas sinken, wenn es den unabhängigen Importeuren wegen der niedrigen Preise auf dem Rotterdamer Ölmarkt gelinge, wieder mit den Tankstellen der großen Gesellschaften in einen Preiswettbewerb zu treten. Dagegen erklärte der Vorstandsvorsitzende der Deutschen Esso, Öhme, daß die Benzin- und Heizölpreise weiter steigen würden, weil das Angebot immer knapper werde.</p>
+
+        <h3>Kritik an Bahn</h3>
+        <p>Die Tarife der Bundesbahn sind nach Ansicht von Bayerns Wirtschaftsminister Jaumann zu unübersichtlich und damit nicht verbraucherfreundlich. Angesichts der zunehmenden Probleme im Energiebereich soll die Bundesbahn ihre Preispolitik stärker als bisher an der Nachfrage ausrichten und sich ein Beispiel an Schwedens Staatsbahn nehmen, erklärte Jaumann am Wochenende. Schwedens Eisenbahn hatte Ende Juli die Fahrpreise um 30 Prozent gesenkt.</p>
+
+        <h3>Streik in Spanien</h3>
+        <p>Ein viertägiger Generalstreik bei den rund 3000 spanischen Tankstellen, der heute beginnen soll, ist praktisch nicht mehr abzuwenden, nachdem die Tarifverhandlungen am Wochenende abgebrochen wurden. Die Tankstellenpächter hatten sich geweigert, unter dem Druck von Streikdrohungen weiterzuverhandeln, obwohl bereits eine prinzipielle Einigung über die Lohnerhöhung für die Tankwarte erreicht worden war.</p>
+
+        <h3>Besuch beendet</h3>
+        <p>Die Volksrepublik China rechnet bei der vorrangigen technischen Entwicklung der chinesischen Landwirtschaft auf die Zusammenarbeit mit der Bundesrepublik und der deutschen Industrie. Dies betonte der chinesische Landwirtschaftsminister Huo, der am Wochenende einen Besuch in der Bundesrepublik abschloß.</p>
+
+        <h3>Waisen kommen</h3>
+        <p>Das Deutsche Rote Kreuz will in der letzten Augustwoche 109 elternlose kambodschanische Kinder, die zur Zeit in Thailand untergebracht sind, in die Bundesrepublik holen. Die Kinder sollen an deutsche Pflegefamilien vermittelt werden. Auskunft erteilen das DRK-Generalsekretariat in 5300 Bonn, Friedrich-Ebert-Allee 71, oder das Landesjugendamt des Landeswohlfahrtsverbandes in 7500 Karlsruhe, Ernst-Frei-Straße.</p>
+
+        <h3>Baum mahnt</h3>
+        <p>Bundesinnenminister Baum will „alles tun“, damit der Sport nicht politisch mißbraucht und nicht zum Vehikel für politische Ziele gemacht wird. In der ZDF-Sendung „Bonner Perspektiven“ erklärte Baum gestern im Hinblick auf die Olympischen Spiele 1980 in Moskau, es komme darauf an, „den unbestreitbaren Versuch“, Sport zu politisieren, gering zu halten.</p>
+      </div>
+    </aside>
+
+    <!-- Mitte -->
+    <section class="stack c3">
+
+      <article class="top">
+        <div class="kicker">Regierung will erst Abbau der Staatsverschuldung</div>
+        <h1>Lambsdorff: Weniger Steuern<br>ab 1981 – Strauß: Schon 1980</h1>
+        <div class="deck">Sparkassenpräsident Geiger: Bald fünf Prozent Inflationsrate</div>
+        <div class="txt k3">
+          <p class="lead-p">HAMBURG (dpa). Die Diskussion um eine Änderung der Steuertarife hielt auch am Wochenende an. Während Bundeswirtschaftsminister Lambsdorff (FDP) meinte, die günstige Konjunkturlage könne im kommenden Jahr die Staatsverschuldung vermindern und damit eine solide Voraussetzung für die Änderung der Steuertarife 1981 schaffen, forderten Politiker der CDU und CSU umgehend konkrete Steuersenkungspläne für 1980.</p>
+          <p>In einem Interview des Süddeutschen Rundfunks Stuttgart sagte Lambsdorff gestern, das Wirtschaftswachstum werde 1979 voraussichtlich vier Prozent betragen. Diese Entwicklung der Konjunktur werde auch 1980 anhalten, wenn eine sinnvolle fiskalische Politik und die Geldpolitik der Bundesbank fortgesetzt würden und die bevorstehenden Tarifverhandlungen nicht mit überzogenen Abschlüssen endeten.</p>
+          <p>Der bayerische Ministerpräsident Strauß (CSU) forderte dagegen am Samstag in Kempten, eine spürbare Senkung der Lohn- und Einkommensteuer bereits zum 1. Januar 1980 und einen Ausgleich an jeden Bürger für die „heimlichen inflationsbedingten“ Steuererhöhungen.</p>
+          <p>Der rheinland-pfälzische Finanzminister Johann Wilhelm Gaddum (CDU) meinte, der Abbau der Staatsverschuldung und Steuerentlastungen für die Bürger könnten nebeneinander betrieben werden. In einem Interview der „Allgemeinen Zeitung“ in Mainz erklärte er, auf Grund der vorliegenden Zahlen könne schon jetzt davon ausgegangen werden, daß die letzten Steuerschätzungen auf der Einnahmenseite um mindestens drei Milliarden Mark überschritten werde. Dieser Trend werde auch 1980 anhalten.</p>
+          <p>In seinem Rundfunkinterview hatte Lambsdorff auch erklärt, er erwarte, daß das Jahr 1980 im Vergleich zu 1979 „eine deutliche Rückbildung in der Preissteigerungsrate bringe“. Der Minister schloß jedoch einen vorübergehenden Preisanstieg in diesem Jahr nicht aus. Der durchschnittliche Anstieg der Verbraucherpreise werde Ende des Jahres voraussichtlich bei 4,5 Prozent landen.</p>
+          <p>Der Präsident des Deutschen Sparkassen- und Giroverbandes, Geiger, hatte dagegen in einem Interview erklärt, es sei damit zu rechnen, daß die Inflationsrate in Kürze die Fünf-Prozent-Grenze übersteigen werde. Im Juli hatte sie 4,6 Prozent betragen. Die Bundesrepublik befinde sich in einer kritischen stabilitätspolitischen Phase. Dennoch müsse vor großer Panik gewarnt werden, weil zum Jahreswechsel die Chance bestehe, die Preissteigerung wieder rückläufig zu gestalten. Pessimistische Konjunkturprognosen für 1980 teile er nicht, sagte Geiger. Er warnte jedoch davor, wegen der Wirtschaftsaussichten für das kommende Jahr in eine expansive Lohnpolitik zurückzufallen.</p>
+        </div>
+      </article>
+
+      <article class="band">
+        <h2 class="hl mid">In Firmen Gespräche über Lohn-Nachschlag</h2>
+        <div class="txt k3">
+          <p>Die Diskussion über Ausgleichszahlungen für Teuerungen ging unterdessen weiter. Der Bezirkssekretär der IG Metall Stuttgart, Eisemann, erklärte in einem Interview der Wochenzeitung „Welt am Sonntag“: „In mehreren Betrieben gibt es jetzt auch Gespräche zwischen Betriebsrat und Geschäftsführung über einen Lohn-Nachschlag.“</p>
+          <p>Die Arbeitgeber in der Metallindustrie hatten am Freitag betont, daß es sich bei den bisher bekanntgewordenen Lohnerhöhungen in Baden-Württemberg, Hessen und Norddeutschland nicht um Teuerungszulagen, sondern um innerbetriebliche Lohnveränderungen für einzelne Gruppen gehandelt habe. Gesamtmetall empfahl seinen Mitgliedsfirmen, Mißverständnissen vorzubeugen und innerbetriebliche Lohnveränderungen zur Zeit zu unterlassen.</p>
+          <p>Der Bundesvorsitzende der Industriegewerkschaft Bau-Steine-Erden, Sperner, hat am Wochenende auf einer Veranstaltung in Recklinghausen versichert, seine Organisation werde die gegenwärtige Preisentwicklung nicht dazu benutzen, einen Lohnnachschlag zu fordern. Die Gewerkschaft wolle sich mit ihren Lohnforderungen bis zum Auslaufen des gegenwärtigen Tarifvertrags im nächsten Jahr zurückhalten.</p>
+          <p>Die Gewerkschaft Nahrung-Genuß-Gaststätten (NGG) hatte bereits am Freitag ihren Verzicht auf eine „vorzeitige Tarifkorrektur“ erklärt, gleichzeitig aber an die Unternehmer appelliert, Preisdisziplin zu üben. Die NGG sprach sich außerdem gegen die Zahlung von Lohnnachschlägen auf betrieblicher Basis aus.</p>
+        </div>
+      </article>
+
+      <article class="band">
+        <h2 class="hl big">Möllemann will Klarheit schaffen</h2>
+        <div class="deck2">Kein Treffen Genschers mit Arafat – PLO will weiter Westkontakte pflegen</div>
+        <div class="txt k3">
+          <p class="lead-p">BONN (dpa). Der FDP-Politiker Möllemann will heute vor der Bonner Presse eine klärende Darstellung seiner von Spekulationen begleiteten Gespräche mit PLO-Chef Arafat geben.</p>
+          <p>Wie es gestern in Bonn hieß, werde er zuvor den FDP-Vorsitzenden, Bundesaußenminister Genscher, über das Ergebnis seiner Nahostreise unterrichten. Dies sei schon vor Reiseantritt vereinbart worden.</p>
+          <p>Möllemann versicherte am Samstagabend im Westdeutschen Regionalfernsehen noch einmal, daß er bei seinen Gesprächen mit Arafat ausschließlich die Haltung der FDP in der Nahostfrage vertreten habe. Es habe keinen „Nahostplan“ der FDP oder eine Geheimbotschaft gegeben, die er hätte überbringen sollen. Bundesaußenminister Genscher habe „natürlich völlig recht“, als er einen solchen Plan dementiert habe.</p>
+          <p>Möllemann will auf der Pressekonferenz auch seinen jüngsten Vorschlag erläutern, daß eine Delegation aller drei Fraktionen des Bundestags mit der PLO Gespräche aufnehmen sollte. Gegen diesen Vorschlag wandte sich jedoch bereits gestern der CDU-Abgeordnete Mertes aus, wie er sagte, „schwerwiegenden Gründen“. Die PLO, so meinte der Politiker, mißachte bis jetzt das Gewaltverbot des Völkerrechts, das nach Auffassung der Bundesrepublik ein Fundament des Weltfriedens sei. „Ein ausdrücklicher Terrorverzicht der PLO ist unerläßlich“, betonte Mertes.</p>
+          <p>Die CDU/CSU-Opposition dringt darauf, daß im Zusammenhang mit der Reise Möllemanns nach Nahost eine Bundestagsdebatte über die deutsche Nahostpolitik geführt wird. Sie sollte nach Meinung von Mertes so bald wie möglich nach der Sommerpause angesetzt werden. Er fügte hinzu, er habe angesichts der Widersprüche, die sich aus dem Acht-Punkte-Papier Möllemanns und der Stellungnahme Genschers gezeigt hätten, ein „ungutes Gefühl“. Möglicherweise sei Möllemann das, was Strauß einmal in einem anderen Zusammenhang einen „Minenhund“ genannt habe, nämlich jemand, der testen sollte, wie weit die PLO wirklich zu gehen bereit sei.</p>
+          <p>In Bonn wurde gestern noch einmal nachdrücklich in Abrede gestellt, daß für den 27. August ein Gespräch von Bundesaußenminister Genscher während dessen Aufenthalt in Beirut mit PLO-Chef Arafat geplant sei, wie es der „Spiegel“ in seiner neuen Ausgabe berichtet. Der Sprecher des Auswärtigen Amtes erklärte dpa auf Anfrage: „Es gab und gibt keine Pläne für ein solches Treffen.“ Genscher wird während seiner am 26. August beginnenden Nahostreise in vier arabische Länder am 28. August auf Einladung des libanesischen Außenministers Fuad Boutros für einen Tag Station in Beirut machen.</p>
+          <p>Der Chef der Palästinensischen Befreiungsorganisation, Yassir Arafat, wird seine Gespräche mit führenden Repräsentanten westlicher Länder fortsetzen. Nach über neunstündiger, kontrovers geführter Diskussion im Zentralrat stimmte das zweithöchste Gremium der PLO gestern in Damaskus dem „außenpolitischen Konzept“ des Exekutivkomitees zu.</p>
+          <p>US-Präsident Carter hat unterdessen in einem Interview bekräftigt, daß er gegen die Schaffung eines separaten Palästinenserstaates ist. Er versprach, die USA würden ihre Bedingungen für Verhandlungen mit der Palästinensischen Befreiungsfront PLO nicht aufheben. Dazu gehöre vor allem das Existenzrecht Israels.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Rechts -->
+    <section class="stack c2">
+      <div class="sportbanner"><h2>Sport vom Wochenende</h2></div>
+      <img class="photo" src="foto.png" alt="Leichtathletik-Meisterschaften in Stuttgart bei Regen">
+      <div class="cap">Unter Regen litten die deutschen Leichtathletik-Meisterschaften in Stuttgart. Für die Fotografen allerdings Gelegenheit zu solch attraktiven Schnappschüssen.</div>
+
+      <div class="sport2">
+        <div>
+          <h3>Lohre: Rekord im Stabhochsprung</h3>
+          <p>Star der deutschen Leichtathletik-Meisterschaften im Stuttgarter Neckarstadion vor 40 000 Zuschauern war wieder einmal Harald Schmid, der sich über 400 Meter auf die Weltjahresbestzeit von 44,92 steigerte. Unter dem mäßigen Wetter litten allerdings die meisten Leistungen. Günter Lohre (Kornwestheim) gelang dennoch der einzige Einzelrekord der Titelkämpfe mit 5,55 m im Stabhochsprung. Überraschungen gab es in den Hochsprung-Wettbewerben, wo sich der Frankfurter Nagel mit 2,30 m und Ulrike Meyfarth mit 1,90 m durchsetzten.</p>
+
+          <div class="lotto-h"><h3>Toto – Lotto – Lotterie</h3></div>
+          <div class="lotto">
+            <div><b>Toto:</b> <span class="nums">1 1 2 1 0 0 1 0 2 2 2</span></div>
+            <div><b>Pferdetoto:</b> 8 13 5</div>
+            <div><b>Pferdelotto:</b> 9 10 14 17</div>
+            <div><b>„Spiel 77“:</b> <span class="nums">0 0 7 7 2 2 9</span></div>
+            <div><b>Lotto:</b> 2 5 9 22 26 30, Zusatzzahl: 49.</div>
+            <div><b>Auswahlwette „6 aus 45“:</b> 15 20 24 28 39 41, Zusatzspiel: 35.</div>
+            <div><b>Südd. Klassenlotterie:</b> Es entfallen als Hauptgewinn: 500 000 DM (Großes Los der Woche) auf die Losnummer 307 346, 50 000 DM auf 265 013, 40 000 DM auf 254 107, 30 000 DM auf 303 734, 20 000 DM auf 380 321, 10 000 DM auf 020 397 und 029 931 und 118 423 und 123 808 und 126 813 und 144 490 und 153 131 und 161 773 und 184 004 und 244 098 und 265 422 und 333 389 und 351 776 und 372 631 und 386 334. Ferner entfallen: 5000 DM auf die Endziffern 03 394 und 03 688 und 15 271 und 38 713 und 55 096, 2000 DM auf die Endziffer 6902, 1000 DM auf die Endziffer 622, 500 DM auf die Endziffern 13 und 85.</div>
+            <div class="og">(Ohne Gewähr)</div>
+          </div>
+
+          <div class="kurz-h"><h3>kurz – aber wichtig</h3></div>
+          <div class="kurz">
+            <h4>Straßenschlacht im Iran</h4>
+            <p class="b">Eine Demonstration für die Pressefreiheit im Iran führte gestern in Teheran zur ersten Straßenschlacht seit dem Umsturz im Lande.</p>
+            <h4>Perser entlassen</h4>
+            <p>Zwei persische Studenten, die in Kiel Landsleute wegen angeblicher Zugehörigkeit zum früheren Geheimdienst Savak drangsaliert haben sollen, sind aus der Haft entlassen worden.</p>
+            <h4>1000 Tote befürchtet</h4>
+            <p class="b">Zweitägige Regenfälle im westindischen Staat Gujarat haben gestern einen Staudamm zum Bersten gebracht. Die folgende Springflut soll 700 bis 1000 Menschen getötet haben.</p>
+          </div>
+
+        </div>
+
+        <div>
+          <h3>20 Tore zum Auftakt der Bundesliga</h3>
+          <p>Nur 20 Tore vor insgesamt 255 000 Zuschauern gab’s zum Auftakt der Fußball-Bundesliga. Nur der 1. FC Kaiserslautern (4:0 über Düsseldorf) und Titelverteidiger Hamburger SV (3:0 in Bochum) überzeugten. Zufrieden war man auch beim VfB Stuttgart mit dem 1:1 in Duisburg. Am kommenden Samstag erwarten die Schwaben den Tabellenführer Kaiserslautern. In der zweiten Liga Süd muß Offenbach seine führende Position beim Aufsteiger Ulm verteidigen, der in Bayreuth ein 1:1 ertrotzte.</p>
+
+          <div style="height:14px"></div>
+          <div class="heute-h"><h3>heute</h3></div>
+          <div class="heute">
+            <h4>Hoffnung auf 1980</h4>
+            <p>rö. Von den politischen Sommerthemen werden Lohnnachschlag und Steuersenkung noch einige Zeit Dauerbrenner bleiben. Beim sogenannten Nachschlag sind sich bemerkenswerterweise Gewerkschaftsführung, Unternehmerverbände und Politiker einig, ihn abzulehnen, doch Basisorganisationen einiger Gewerkschaften halten die Diskussion unverändert am Kochen. Das ist im Blick auf die Mitglieder verständlich, gesamtwirtschaftlich aber nicht ungefährlich. Denn der von den Energiekosten kommende Preisschub ist eine Art volkswirtschaftliches Naturereignis, das sinnvoll nur durch Gegensteuern im Verbrauchsbereich gedämpft werden kann. Verbrauchsstabilisierende oder gar -fördernde Kostenzuschläge wären ein Danaergeschenk, das die durchaus realistischen Hoffnungen auf eine Preisstabilisierung im nächsten Jahr mit Sicherheit zunichte machen würde.</p>
+            <p>Diese Hoffnungen hängen allerdings auch davon ab, daß die Preispolitik der Unternehmen ebenfalls stabilitätsorientiert ist. Die Opfer auf Grund der gestiegenen Energiekosten darf man nicht allein dem Endverbraucher anlasten, der sonst in doppelter Hinsicht als der Dumme dastünde. Angesichts eines echten Konjunkturaufschwungs, dessen Fortsetzung auch 1980 durchaus möglich erscheint, sollten die Appelle zu Preisdisziplin deshalb auf fruchtbaren Boden fallen.</p>
+            <p>Bleibt die Auseinandersetzung um Steuersenkungen, die schon endgültig in das Fahrwasser des Vorwahlkampfes abgeschwommen zu sein scheint. Dadurch ist es praktisch unmöglich geworden, den Termin neuer Tarifkorrekturen mit sachlichen Argumenten zu erörtern. Auch wenn es die Parteien nicht zugeben.</p>
+          </div>
+        </div>
+      </div>
+      <div class="eil">
+        <div class="heute-h"><h3>EILMELDUNG</h3></div>
+        <div class="heute">
+          <h4>Doris Martin / Start bei Spieth</h4>
+          <p>Nach langen und zähen Verhandlungen konnte der renommierte Maschinenelemente-Hersteller Spieth aus Esslingen Doris Martin davon überzeugen, ab heute ihre volle Arbeitskraft in seinen Dienst zu stellen. Beide Seiten zeigten sich vom Verhandlungsergebnis zufrieden und freuen sich auf die Zusammenarbeit!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Unterer Streifen ===== -->
+  <section class="bottom">
+    <article class="story" style="grid-column:span 2">
+      <h2>Gericht urteilt gegen Land</h2>
+      <div class="deck2">Probezeit für Lehrer nur im Beamtenverhältnis</div>
+      <div class="txt k2">
+        <p class="lead-p">KARLSRUHE/STUTTGART (dpa). Die von Baden-Württemberg seit 1977 für Lehrer vergebenen Stellen mit Dreivierteldeputat im Angestelltenverhältnis sind nach einem Urteil des Verwaltungsgerichts Karlsruhe rechtswidrig.</p>
+        <p>Das Gericht traf diese jetzt bekanntgewordene Entscheidung im Rechtsstreit einer Realschullehrerin, die geklagt hatte, weil sie nach bestandener zweiter Dienstprüfung nicht in das Beamtenverhältnis übernommen worden war. Die Kammer urteilte, daß nach dem geltenden Beamtenrecht bei Bestehen der entsprechenden Laufbahnprüfung „ausschließlich und zwingend“ die Probezeit im Beamtenverhältnis zu erfolgen habe.</p>
+        <p>Das Kultusministerium hat gegen das Urteil Berufung eingelegt. Sollte dieses Urteil bestätigt werden, müßten die rund 5000 angestellten Lehrer im Probeverhältnis im Land in das Beamtenverhältnis übernommen werden.</p>
+      </div>
+    </article>
+
+    <article class="story" style="grid-column:span 2">
+      <h2 style="text-align:center">Vertrauen für Cossiga</h2>
+      <div class="deck2" style="text-align:center">Nach siebenmonatiger Krise neue Regierung in Italien</div>
+      <div class="txt k2">
+        <p class="lead-p">ROM (dpa). Erwartungsgemäß hat die Regierung des italienischen Christdemokraten Cossiga am Wochenende das Vertrauen des Abgeordnetenhauses erhalten.</p>
+        <p>287 Abgeordnete stimmten für das aus Christdemokraten, Sozialdemokraten und Liberalen bestehende Kabinett, 242 stimmten dagegen und 65 enthielten sich. Die Opposition besteht aus Kommunisten, Radikalen und kleineren ultralinken Gruppen. Cossigas Mehrheit hing von der Stimmenthaltung der Sozialisten und Republikaner ab. Nach der Vertrauensabstimmung im Senat hat Italien Anfang der Woche nach beinahe siebenmonatiger Regierungskrise wieder eine voll amtsfähige Regierung.</p>
+        <p>Ein großes Fragezeichen steht lediglich über der Länge von Cossigas Amtszeit. Die nach monatelangem Parteienzwist und vorzeitigen Parlamentsneuwahlen gebildete 42. Regierung seit dem Sturz des Faschismus gilt in Ermangelung einer festen Koalition als Übergangsregierung.</p>
+      </div>
+    </article>
+
+    <article class="story" style="grid-column:span 2">
+      <h2 style="text-align:center">Gegen weniger Fernstraßen</h2>
+      <div class="deck2" style="text-align:center">Automobilclubs protestieren gegen Kürzungspläne</div>
+      <div class="txt k2">
+        <p class="lead-p">HAMBURG (dpa). Auf heftige Kritik des Automobilclubs von Deutschland (AvD) ist der Plan von Bundesverkehrsminister Gscheidle gestoßen, einige tausend Kilometer Autobahn weniger als vorgesehen zu bauen.</p>
+        <p>Dieses Vorhaben laufe auf „vorsätzliche Energieverschwendung“ hinaus, erklärte ein AvD-Sprecher gegenüber „Bild am Sonntag“. Bei Schleichgeschwindigkeiten im Stadt- und Landstraßenverkehr mit dauernden Stops werde erheblich mehr Benzin verbraucht als bei konstanter Fahrt auf den Autobahnen.</p>
+        <p>Gegen Kürzungspläne im Fernstraßenbau in Nordrhein-Westfalen und Niedersachsen hat jetzt die Deutsche Straßenliga, der unter anderen der ADAC und der AvD angehören, protestiert. In Schreiben an die zuständigen Minister der beiden Länder wird darauf hingewiesen, daß vor allem Ost-West-Verbindungen betroffen würden. Dies widerspreche der Einbindung der Bundesrepublik in die europäische Verkehrsinfrastruktur.</p>
+      </div>
+    </article>
+  </section>
+
+</div>
+</body>
+</html>
