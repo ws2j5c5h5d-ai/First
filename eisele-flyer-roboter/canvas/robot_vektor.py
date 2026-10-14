@@ -23,6 +23,11 @@ GREY, GREY_HI = hx('#D5D9DF'), hx('#FFFFFF')
 
 # ---------------------------------------------------------------- Geometrie
 HEAD = (1640, 700, 172, 208)                       # Ellipse cx, cy, rx, ry
+CRANIUM = [(1640, 492), (1735, 508), (1798, 570), (1818, 680), (1802, 790), (1752, 865),
+           (1690, 902), (1612, 904), (1540, 882), (1486, 828), (1462, 730), (1472, 625),
+           (1520, 540), (1578, 503)]
+FACE = [(1478, 650), (1510, 572), (1572, 538), (1628, 548), (1660, 610), (1668, 720),
+        (1652, 818), (1612, 872), (1552, 880), (1500, 846), (1476, 760)]
 VISOR = [(1478, 640), (1520, 560), (1600, 540), (1640, 590), (1650, 720),
          (1632, 850), (1590, 885), (1520, 870), (1478, 790)]
 NECK = (1612, 890, 1712, 995)
@@ -154,12 +159,16 @@ def draw_robot(c, K, PH, dx=0.0, dy=0.0, s=1.0, legs=True):
     shell(smooth_poly(TORSO))
     p = c.beginPath(); p.moveTo(1618, 885); p.lineTo(1706, 885)
     p.curveTo(1708, 930, 1716, 950, 1740, 968); p.lineTo(1586, 968); p.curveTo(1608, 950, 1616, 930, 1618, 885); p.close()
-    shell(p)
+    c.setFillColor(SHELL_FILL); c.drawPath(p, stroke=0, fill=1)
+    for side in ((1618, 885, 1616, 930, 1608, 950, 1586, 968), (1706, 885, 1708, 930, 1716, 950, 1740, 968)):
+        q = c.beginPath(); q.moveTo(side[0], side[1]); q.curveTo(*side[2:])
+        c.setStrokeColor(SHELL_GLOW); c.setLineWidth(4.5 * u); c.drawPath(q, stroke=1, fill=0)
+        c.setStrokeColor(SHELL_LINE); c.setLineWidth(0.7 * u); c.drawPath(q, stroke=1, fill=0)
     for a, b, r in ARM_R:
         shell(capsule(a, b, r))
     for a, b, r in ARM_L:
         shell(capsule(a, b, r))
-    p = c.beginPath(); p.ellipse(HEAD[0] - HEAD[2], HEAD[1] - HEAD[3], 2 * HEAD[2], 2 * HEAD[3]); shell(p)
+    shell(smooth_poly(CRANIUM))
 
     # Nähte / Segmentfugen der Hülle
     c.setStrokeColor(SEAM); c.setLineWidth(0.45 * u)
@@ -205,11 +214,8 @@ def draw_robot(c, K, PH, dx=0.0, dy=0.0, s=1.0, legs=True):
         c.setStrokeColor(PART_HI); c.setLineWidth(0.45 * u); c.circle(x, y, r * 0.64, stroke=1, fill=0)
         c.setFillColor(PART_LINE); c.circle(x, y, r * 0.16, stroke=0, fill=1)
 
-    # ---- Dunkle Teile: Visier und Hände
-    c.setFillColor(DARK); c.setStrokeColor(DARK_LINE); c.setLineWidth(0.55 * u)
-    c.drawPath(smooth_poly(VISOR), stroke=1, fill=1)
-    c.setStrokeColor(hx('#3A4A63')); c.setLineWidth(0.6 * u)
-    p = c.beginPath(); p.moveTo(1505, 610); p.curveTo(1525, 575, 1565, 560, 1600, 575); c.drawPath(p, stroke=1, fill=0)
+    # ---- Kopf: Gesichtsscheibe, Sensor, Ohrmodul, Fugen, Halsringe
+    _head_details(c, u, smooth_poly)
     _hand(c, u, (790, 1560), (530, 1700), flip=False)
     _hand(c, u, (1945, 1975), (1860, 2230), flip=True)
     c.restoreState()
@@ -219,28 +225,106 @@ def _rect_path(c, r):
     p = c.beginPath(); p.rect(r[0], r[1], r[2] - r[0], r[3] - r[1]); return p
 
 
+def _head_details(c, u, smooth_poly):
+    # Halsringe
+    c.setStrokeColor(SEAM); c.setLineWidth(0.5 * u)
+    for y in (912, 930, 948):
+        c.line(1624, y, 1704, y)
+    # Fugen am Schädel (hinter der Gesichtsscheibe)
+    p = c.beginPath(); p.moveTo(1596, 498); p.curveTo(1690, 516, 1762, 600, 1774, 700)
+    p.curveTo(1782, 790, 1752, 858, 1700, 896); c.drawPath(p, stroke=1, fill=0)
+    p = c.beginPath(); p.moveTo(1560, 884); p.curveTo(1630, 862, 1705, 852, 1772, 842)
+    c.drawPath(p, stroke=1, fill=0)
+    # Ohrmodul (Gelenk-/Sensoreinheit), in 3/4-Ansicht
+    c.setStrokeColor(SEAM); c.ellipse(1700, 625, 1790, 775, stroke=1, fill=0)
+    c.setFillColor(PART_B); c.setStrokeColor(PART_LINE); c.setLineWidth(0.5 * u)
+    c.ellipse(1714, 652, 1776, 750, stroke=1, fill=1)
+    c.setFillColor(PART_A); c.ellipse(1726, 672, 1764, 730, stroke=0, fill=1)
+    c.setStrokeColor(PART_HI); c.setLineWidth(0.4 * u); c.ellipse(1726, 672, 1764, 730, stroke=1, fill=0)
+    c.setFillColor(PART_LINE); c.ellipse(1740, 693, 1750, 709, stroke=0, fill=1)
+    # Gesichtsscheibe: dunkles Rauchglas mit weicher Spiegelung
+    face = smooth_poly(FACE)
+    c.setFillColor(DARK); c.setStrokeColor(DARK_LINE); c.setLineWidth(0.6 * u)
+    c.drawPath(face, stroke=1, fill=1)
+    c.saveState(); c.clipPath(smooth_poly(FACE), stroke=0, fill=0)
+    r = c.beginPath(); r.moveTo(1488, 640); r.curveTo(1512, 575, 1570, 545, 1630, 560)
+    r.curveTo(1600, 575, 1545, 600, 1505, 690); r.close()
+    c.setFillColor(hx('#C9DAF2', 0.16)); c.drawPath(r, stroke=0, fill=1)
+    r = c.beginPath(); r.moveTo(1640, 640); r.curveTo(1655, 700, 1650, 780, 1620, 840)
+    r.curveTo(1632, 780, 1636, 700, 1625, 650); r.close()
+    c.setFillColor(hx('#C9DAF2', 0.07)); c.drawPath(r, stroke=0, fill=1)
+    c.restoreState()
+    # Innenkante der Scheibe
+    c.setStrokeColor(hx('#33425A')); c.setLineWidth(0.45 * u)
+    p = c.beginPath(); p.moveTo(1500, 760); p.curveTo(1500, 840, 1560, 866, 1610, 856)
+    c.drawPath(p, stroke=1, fill=0)
+    # Stirnsensor
+    c.setFillColor(PART_B); c.setStrokeColor(PART_LINE); c.setLineWidth(0.45 * u)
+    c.circle(1612, 522, 9, stroke=1, fill=1)
+    c.setFillColor(hx('#0E1522')); c.circle(1612, 522, 4.5, stroke=0, fill=1)
+
+
+def _segment(c, u, l, w):
+    """Ein Fingerglied entlang +x, mit Lichtkante und Gelenkpunkt am Ende."""
+    c.setFillColor(DARK); c.setStrokeColor(DARK_LINE); c.setLineWidth(0.5 * u)
+    c.roundRect(-w * 0.4, -w / 2, l + w * 0.4, w, w * 0.3, stroke=1, fill=1)
+    c.setStrokeColor(hx('#53647F', 0.9)); c.setLineWidth(0.4 * u)
+    c.line(w * 0.3, -w / 2 + 2.6, l - w * 0.45, -w / 2 + 2.6)
+    c.setFillColor(DARK); c.setStrokeColor(DARK_LINE); c.setLineWidth(0.45 * u)
+    c.circle(l, 0, w * 0.47, stroke=1, fill=1)
+    c.setFillColor(hx('#3B4A62')); c.setStrokeColor(hx('#71839F')); c.setLineWidth(0.35 * u)
+    c.circle(l, 0, w * 0.20, stroke=1, fill=1)
+
+
+def _finger(c, u, base, spread, lens, widths, curls):
+    c.saveState(); c.translate(*base); c.rotate(spread)
+    for i, (l, w) in enumerate(zip(lens, widths)):
+        if i == len(lens) - 1:
+            # Endglied: ohne Gelenkpunkt, mit Fingerkuppe
+            c.setFillColor(DARK); c.setStrokeColor(DARK_LINE); c.setLineWidth(0.5 * u)
+            c.roundRect(-w * 0.4, -w / 2, l + w * 0.4, w, w / 2, stroke=1, fill=1)
+            c.setStrokeColor(hx('#53647F', 0.9)); c.setLineWidth(0.4 * u)
+            c.line(w * 0.35, -w / 2 + 2.6, l - w * 0.6, -w / 2 + 2.6)
+            c.setStrokeColor(hx('#2E3B50')); c.line(l - w * 0.55, -w * 0.32, l - w * 0.55, w * 0.32)
+        else:
+            _segment(c, u, l, w)
+            c.translate(l, 0); c.rotate(curls[i])
+    c.restoreState()
+
+
 def _hand(c, u, wrist, tip, flip):
     import math
     ang = math.atan2(tip[1] - wrist[1], tip[0] - wrist[0])
     Lh = math.hypot(tip[0] - wrist[0], tip[1] - wrist[1])
     sgn = -1 if flip else 1
+    curl = (16, 20) if flip else (5, 7)
     c.saveState(); c.translate(*wrist); c.rotate(math.degrees(ang))
+    P = Lh * 0.38                                   # Knöchellinie
+    # Daumen (Ansatz an der Handwurzel)
+    _finger(c, u, (Lh * 0.13, sgn * 22), sgn * 40, (Lh * 0.17, Lh * 0.11, Lh * 0.09), (28, 22, 19),
+            (-sgn * 12, -sgn * 14))
+    # Handgelenkmanschette
     c.setFillColor(DARK); c.setStrokeColor(DARK_LINE); c.setLineWidth(0.55 * u)
-    # Daumen (hinter der Handfläche)
-    c.saveState(); c.translate(Lh * 0.30, sgn * 30); c.rotate(sgn * 38)
-    c.roundRect(0, -11, Lh * 0.26, 22, 11, stroke=1, fill=1); c.restoreState()
-    # Finger, leicht gefächert
-    x0 = Lh * 0.50
-    for off in (-27, -9, 9, 27):
-        ln = Lh * (0.36 if abs(off) < 15 else 0.31)
-        c.saveState(); c.translate(x0, off); c.rotate(off * 0.22)
-        c.roundRect(-6, -10.5, ln, 21, 10.5, stroke=1, fill=1)
-        c.setStrokeColor(hx('#3A4A63')); c.setLineWidth(0.4 * u)
-        c.line(ln * 0.42, -8, ln * 0.42, 8)
-        c.setStrokeColor(DARK_LINE); c.restoreState()
-    c.setLineWidth(0.55 * u)
-    c.roundRect(Lh * 0.12, -42, Lh * 0.44, 84, 22, stroke=1, fill=1)   # Handfläche
-    c.roundRect(-14, -32, Lh * 0.20, 64, 12, stroke=1, fill=1)        # Handgelenkmodul
+    c.roundRect(-18, -31, 46, 62, 10, stroke=1, fill=1)
     c.setStrokeColor(hx('#3A4A63')); c.setLineWidth(0.45 * u)
-    c.line(Lh * 0.20 - 14, -30, Lh * 0.20 - 14, 30)
+    for x in (-4, 10):
+        c.line(x, -28, x, 28)
+    # Handfläche: zur Knöchellinie hin breiter
+    pm = c.beginPath(); pm.moveTo(26, -30); pm.lineTo(P - 6, -45)
+    pm.curveTo(P + 8, -46, P + 12, -36, P + 12, -26); pm.lineTo(P + 12, 26)
+    pm.curveTo(P + 12, 36, P + 8, 46, P - 6, 45); pm.lineTo(26, 30); pm.close()
+    c.setFillColor(DARK); c.setStrokeColor(DARK_LINE); c.setLineWidth(0.55 * u)
+    c.drawPath(pm, stroke=1, fill=1)
+    c.setStrokeColor(hx('#3A4A63')); c.setLineWidth(0.45 * u)
+    p = c.beginPath(); p.moveTo(34, sgn * 20); p.curveTo(P * 0.6, sgn * 8, P * 0.8, -sgn * 6, P - 4, -sgn * 30)
+    c.drawPath(p, stroke=1, fill=0)                 # Ballenfuge
+    c.setStrokeColor(hx('#53647F', 0.9)); c.setLineWidth(0.4 * u); c.line(32, -27, P - 8, -41)
+    # Finger: Zeige-, Mittel-, Ring-, kleiner Finger
+    for yk, sc, sp in ((-33 * sgn, 0.92, -3 * sgn), (-11 * sgn, 1.0, -1 * sgn), (11 * sgn, 0.95, 1 * sgn), (33 * sgn, 0.78, 3.5 * sgn)):
+        _finger(c, u, (P + 6, yk), sp, (Lh * 0.19 * sc, Lh * 0.125 * sc, Lh * 0.10 * sc), (21, 19.5, 18),
+                (curl[0] * sgn, curl[1] * sgn))
+    # Knöchelgelenke
+    for yk in (-33, -11, 11, 33):
+        c.setFillColor(hx('#3B4A62')); c.setStrokeColor(hx('#71839F')); c.setLineWidth(0.4 * u)
+        c.circle(P + 6, yk, 6.5, stroke=1, fill=1)
     c.restoreState()
