@@ -5,6 +5,7 @@ Schreibt zusätzlich die 2D-Bildkoordinaten der Produkt-Einbauorte als JSON.
 """
 import json
 import math
+import os
 import sys
 
 import bpy
@@ -45,7 +46,8 @@ def srgb(h):
     return tuple(lin(int(h[i:i + 2], 16)) for i in (1, 3, 5))
 
 
-M_WHITE = mat('Verkleidung', srgb('#E9EBEE'), rough=0.32, coat=0.35)
+VARIANT = os.environ.get('VARIANT', 'poster')
+M_WHITE = mat('Verkleidung', srgb('#E9EBEE') if VARIANT == 'poster' else srgb('#5A606A'), rough=0.32 if VARIANT == 'poster' else 0.38, coat=0.35)
 M_GRAPH = mat('Graphit', srgb('#2A2E35'), rough=0.42, metal=0.35)
 M_DARK = mat('Gelenk', srgb('#16191E'), rough=0.5, metal=0.2)
 M_ALU = mat('Aluminium', srgb('#C9CDD3'), rough=0.22, metal=1.0)
@@ -364,6 +366,7 @@ for side, hp, kn, s, xk in (('L', hpL, knL, -1, -0.025), ('R', hpR, knR, 1, 0.04
     fitting(f'VT5528_Knie_{side}', W(kn, (s * 0.064, 0.0, 0.0)), W(kn, (s, 0, 0)) - W(kn, (0, 0, 0)), scale=1.4)
 ANCH['v0129'] = W(root, (-0.085, -0.1, 1.075))
 ANCH['knie'] = W(knL, (-0.066, 0.0, 0.0))
+ANCH['huefte'] = W(hpL, (-0.07, -0.03, 0.0))
 
 # Verteiler-Anschlüsse im Schacht
 for k, (x, z) in enumerate(((-0.02, 1.345), (0.06, 1.345), (-0.025, 1.255), (0.045, 1.255))):
@@ -405,8 +408,13 @@ floor.visible_glossy = False
 
 cam_d = bpy.data.cameras.new('Kamera'); cam_d.lens = 58
 cam = bpy.data.objects.new('Kamera', cam_d); bpy.context.collection.objects.link(cam)
-cam.location = (-1.48, -2.98, 1.05)
-cam.rotation_euler = (Vector((0.02, 0, 0.93)) - cam.location).to_track_quat('-Z', 'Y').to_euler()
+if VARIANT == 'poster':
+    cam.location = (-1.48, -2.98, 1.05)
+    cam.rotation_euler = (Vector((0.02, 0, 0.93)) - cam.location).to_track_quat('-Z', 'Y').to_euler()
+else:
+    cam.location = (-0.98, -1.98, 1.36)
+    cam.rotation_euler = (Vector((0.0, 0, 1.25)) - cam.location).to_track_quat('-Z', 'Y').to_euler()
+    floor.hide_render = True
 scn.camera = cam
 
 # ------------------------------------------------------------------ Render
