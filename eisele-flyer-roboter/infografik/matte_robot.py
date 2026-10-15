@@ -1,0 +1,34 @@
+"""Freistellen des aufgewerteten Roboters (x4) vor hellem Hintergrund.
+Aufruf: matte_robot.py <robot_x4.png> <out_rgba.png>   (Ausschnitt ab x=430 im Entwurf)"""
+import sys
+import numpy as np, cv2
+from PIL import Image
+from scipy import ndimage as ndi
+src, out = sys.argv[1:3]
+S, OX = 4, 430
+im = np.array(Image.open(src).convert('RGB'))
+f = im.astype(np.float32)
+H, W = im.shape[:2]
+# eingebrannte Tags/Einschübe auf weißem Grund ausblenden (Entwurfskoordinaten)
+for (x0, y0, x1, y1) in ((632, 166, 706, 199), (928, 148, 1008, 184), (530, 496, 654, 531), (549, 548, 733, 772), (563, 862, 722, 895)):
+    f[y0 * S:y1 * S, max(0, (x0 - OX) * S):(x1 - OX) * S] = 250
+mn = f.min(-1)
+fg = mn < 236
+fg = cv2.morphologyEx(fg.astype(np.uint8), cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15))) > 0
+lab, n = ndi.label(fg); sz = ndi.sum(fg, lab, range(1, n + 1)); fg = lab == (np.argmax(sz) + 1)
+fg = ndi.binary_fill_holes(cv2.morphologyEx(fg.astype(np.uint8), cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (21, 21))) > 0)
+inner = ndi.binary_erosion(fg, iterations=5)
+band = ndi.binary_dilation(fg, iterations=5) & ~inner
+soft = np.clip((248 - mn) / 30, 0, 1)
+alpha = np.where(inner, 1.0, np.where(band, soft, 0.0)).astype(np.float32)
+alpha = cv2.GaussianBlur(alpha, (0, 0), 1.2)
+alpha[-6:] = np.where(fg[-6:], 1.0, alpha[-6:])
+# weißen Saum aus halbtransparenten Kanten herausrechnen
+a3 = np.clip(alpha, 0.06, 1)[..., None]
+bgc = 249.0
+dec = np.clip((f - bgc * (1 - a3)) / a3, 0, 255)
+f2 = np.where(((alpha > 0.02) & (alpha < 0.98))[..., None], dec, im.astype(np.float32))
+rgba = np.dstack([f2.astype(np.uint8), (alpha * 255).astype(np.uint8)])
+img = Image.fromarray(rgba, 'RGBA').resize((W // 2, H // 2), Image.LANCZOS)   # 2x Entwurf = ca. 340 dpi bei 864 pt Breite
+img.save(out)
+print('ok', img.size)
