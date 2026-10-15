@@ -34,8 +34,8 @@ c.setTitle('Programm Humanoide Roboter'); c.setAuthor('EISELE Marketing')
 
 # ---------------------------------------------------------------- Hintergrund
 c.saveState(); p = c.beginPath(); p.rect(0, 0, PW, PH); c.clipPath(p, stroke=0)
-c.linearGradient(0, PH, 0, 0, (hx('#0D3563'), hx('#0A2A50'), hx('#071C38')), (0, 0.55, 1), extend=True)
-c.radialGradient(300, Y(380), 330, (hx('#24578F'), hx('#103866'), hx('#0A2A50'), hx('#08213F')), (0, 0.5, 0.8, 1), extend=True)
+c.linearGradient(0, PH, 0, 0, (hx('#0E3A69'), hx('#0B335E'), hx('#082849')), (0, 0.55, 1), extend=True)
+c.radialGradient(300, Y(380), 330, (hx('#235A94'), hx('#124173'), hx('#0B335E'), hx('#092B50')), (0, 0.5, 0.8, 1), extend=True)
 c.restoreState()
 # feines Punktraster als technische Textur
 c.setFillColor(hx('#FFFFFF', 0.05))
@@ -58,7 +58,7 @@ def R(x, y):
 BOT = RY + 1024 * S                         # Unterkante; Ausblendung ist im PNG-Alpha enthalten
 
 # ---------------------------------------------------------------- Kopf
-c.setFillColor(LINE); c.rect(32, Y(98), 4, 62, stroke=0, fill=1)
+c.setFillColor(WHITE); c.rect(32, Y(98), 4, 62, stroke=0, fill=1)
 c.setFillColor(WHITE); c.setFont('HB', 25)
 c.drawString(46, Y(60), 'PROGRAMM')
 c.drawString(46, Y(89), 'HUMANOIDE ROBOTER')
@@ -125,7 +125,8 @@ for i, (nm, lab) in enumerate((('p_628d', '628D'), ('p_686d', '686D'), ('p_v0129
 # Fuß
 c.setFillColor(WHITE); c.setFont('HB', 8.4); c.drawString(46, Y(823), 'www.eisele-connectors.com')
 c.setFillColor(DIM); c.setFont('H', 6.2)
-c.drawRightString(PW - 32, Y(823), 'Konzeptdarstellung, KI-gestützte Visualisierung. Einbauorte beispielhaft.')
+c.drawRightString(PW - 32, Y(818), 'Konzeptdarstellung, KI-gestützte Visualisierung. Einbauorte beispielhaft.')
+c.drawRightString(PW - 32, Y(827), 'Abbildungen unverbindlich, Änderungen vorbehalten, für Irrtümer und Druckfehler keine Haftung – 10.26')
 c.showPage(); c.save()
 
 # ---------------------------------------------------------------- Logo als Vektor
