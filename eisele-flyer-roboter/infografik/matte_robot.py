@@ -15,7 +15,11 @@ for (x0, y0, x1, y1) in ((632, 166, 706, 199), (928, 148, 1008, 184), (530, 496,
 mn = f.min(-1)
 fg = mn < 236
 fg = cv2.morphologyEx(fg.astype(np.uint8), cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15))) > 0
-lab, n = ndi.label(fg); sz = ndi.sum(fg, lab, range(1, n + 1)); fg = lab == (np.argmax(sz) + 1)
+lab, n = ndi.label(fg); sz = ndi.sum(fg, lab, range(1, n + 1))
+mean_mn = ndi.mean(mn, lab, range(1, n + 1))
+keep = np.where((sz > max(40000, 0.004 * sz.max())) & (np.array(mean_mn) < 170))[0] + 1   # helle Hintergrundflächen verwerfen
+fg = np.isin(lab, keep)   # alle großen Teile (Arm, Hand) behalten
+print('Teile', len(keep))
 fg = ndi.binary_fill_holes(cv2.morphologyEx(fg.astype(np.uint8), cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (21, 21))) > 0)
 inner = ndi.binary_erosion(fg, iterations=5)
 band = ndi.binary_dilation(fg, iterations=5) & ~inner

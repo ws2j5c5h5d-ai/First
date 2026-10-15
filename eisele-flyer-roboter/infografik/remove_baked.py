@@ -6,7 +6,7 @@ src, out = sys.argv[1:3]
 S, OX = 2, 430                                    # Roboter_HQ: 2x Entwurf, Ursprung x=430
 im = np.array(Image.open(src).convert('RGBA')).astype(np.float32)
 rgb = im[..., :3].copy()
-SEGS = [((814, 272), (934, 180), 6.5)]            # Brust: Linie zum VT5528-Tag (Entwurfskoordinaten, halbe Breite)
+SEGS = [((814, 272), (934, 180), 6.5), ((946, 225), (1012, 225), 3.0), ((944, 506), (1040, 449), 3.5)]            # Brust: Linie zum VT5528-Tag (Entwurfskoordinaten, halbe Breite)
 for (ax, ay), (bx, by), w in SEGS:
     a = np.array([(ax - OX) * S, ay * S], np.float32); b = np.array([(bx - OX) * S, by * S], np.float32)
     L = float(np.linalg.norm(b - a)); d = (b - a) / L; n = np.array([-d[1], d[0]], np.float32); W = w * S
