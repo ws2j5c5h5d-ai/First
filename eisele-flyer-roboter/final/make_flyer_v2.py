@@ -34,19 +34,17 @@ c = rl.Canvas(tmp, pagesize=(PW, PH), initialFontName='H', initialFontSize=8)
 # 1) Alten Titelbereich abdecken
 c.setFillColor(hx('#FFFFFF')); c.rect(36, Y(BAND), PW - 36, BAND - 100, stroke=0, fill=1)
 
-# 2) Roboter: 1,5-fach Lanczos + leichte Schärfung für die Druckausgabe
+# 2) Roboter (Real-ESRGAN-aufgewertet, 2x der Originalauflösung)
 im = Image.open(robot).convert('RGBA')
-up = im.resize((int(im.width * 1.5), int(im.height * 1.5)), Image.LANCZOS)
-rgb = up.convert('RGB').filter(ImageFilter.UnsharpMask(radius=1.2, percent=45, threshold=2))
-rgb.putalpha(up.getchannel('A'))
-rp = out + '.robot.png'; rgb.save(rp)
-S = 0.28                                   # pt pro Originalpixel
+ORIG_W = 1210                             # Breite des Ausgangsbilds in px
+S0 = 0.28                                 # pt pro Ausgangspixel
+S = S0 * ORIG_W / im.width                # pt pro Pixel der aufgewerteten Datei
 IX, IY = 266, BAND - im.height * S
-c.drawImage(rp, IX, Y(BAND), im.width * S, im.height * S, mask='auto')
+c.drawImage(robot, IX, Y(BAND), im.width * S, im.height * S, mask='auto')
 
 
 def P(cx, cy):
-    return IX + cx * S, IY + cy * S
+    return IX + cx * S0, IY + cy * S0
 
 
 # 3) Linke Spalte
