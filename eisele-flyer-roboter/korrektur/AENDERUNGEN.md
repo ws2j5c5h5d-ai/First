@@ -48,3 +48,7 @@ Ausgabe: `final/Eisele_Flyer_Humanoide_Roboter_de_6S.pdf`, Skript `korrektur/bau
 Farbwerte:
 - Navy #0B335E (RGB 11/51/94): aus der Flyer-Quelldatei `Eisele_Flyer_Humanoide_Roboter_de_7.pdf`, Füllfarbe des Footer-Balkens S. 6 (0, 748,5, 595,5, 842,2) und des VORTEILE-Blocks.
 - Rot #FF0000: aus `quellen/HENN_connector_group_logo_aus_Praesentation1.svg` (= `ppt/media/image1.svg` in `Präsentation1.pptx`), `fill="#FF0000"`. Keine CMYK-Angabe in der Datei. Abweichung: das Logo in der Flyer-Quelldatei verwendete #ED1C24.
+
+| Seite | alt | neu |
+|---|---|---|
+| 1 | Poster-Hintergrund aus Bildrand (dunkler als #0B335E), Logofeld als sichtbarer Kasten | Poster-Grund #0B335E; dunkle Bildpixel des Roboterbilds tonwertgleich auf #0B335E verschoben (helle Roboterteile unverändert); Logofeld fügt sich nahtlos ein |

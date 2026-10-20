@@ -39,7 +39,7 @@ im = Image.open(robot_src).convert('RGB')
 arr = np.asarray(im).astype(np.float32)
 edge = np.concatenate([arr[:40].reshape(-1, 3), arr[:, :40].reshape(-1, 3), arr[:, -40:].reshape(-1, 3)])
 base = tuple((np.median(edge, 0) / 255).tolist())
-p.draw_rect(pymupdf.Rect(0, 0, PW, CUT), color=None, fill=base, overlay=True)
+p.draw_rect(pymupdf.Rect(0, 0, PW, CUT), color=None, fill=NAVY, overlay=True)   # Poster-Grund = #0B335E
 
 # Roboterbild mit weicher Randausblendung (keine sichtbaren Bildkanten)
 S = 0.31                                      # pt je Pixel der Entwurfsquelle 765 x 1024
@@ -48,7 +48,13 @@ w, h = im.size
 k = w / 765.0                                 # Quellpixel je Entwurfspixel (x4-Version: 4)
 # Bild unten an der Bandkante abschneiden (statt Abdeckfläche), damit die Übersicht sichtbar bleibt
 h_keep = min(h, int((CUT - 0.5 - OY) / S * k))
-rgba = im.crop((0, 0, w, h_keep)).convert('RGBA')
+# Bildhintergrund auf #0B335E verschieben: dunkle Pixel voll, helle Roboterteile kaum
+c_ = np.asarray(im.crop((0, 0, w, h_keep))).astype(np.float32) / 255
+lum = c_ @ np.array([0.2126, 0.7152, 0.0722], np.float32)
+t = np.clip(1 - lum / 0.45, 0, 1)[..., None]
+c_ += t * (np.array(NAVY, np.float32) - np.array(base, np.float32))
+rgba = Image.fromarray((np.clip(c_, 0, 1) * 255 + 0.5).astype(np.uint8)).convert('RGBA')
+del c_, lum, t
 hh = h_keep
 yy, xx = np.mgrid[0:hh, 0:w].astype(np.float32)
 fx = np.clip(np.minimum(xx, w - 1 - xx) / (90.0 * k), 0, 1)
