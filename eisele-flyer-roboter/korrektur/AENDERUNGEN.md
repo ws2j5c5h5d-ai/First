@@ -87,4 +87,4 @@ Hinweise: Seite 3 EIGENSCHAFTEN steht laut PDF in 7,6 pt (nicht 8,6 pt) und blei
 |---|---|---|
 | 2 | Titel „NEUHEIT / SCHWENKKUPPLUNG“ | Titel „SCHWENKKUPPLUNG“ (Zeile „NEUHEIT“ entfernt, Lage unverändert) |
 
-Web-PDF: `final/Eisele_Flyer_Humanoide_Roboter_de_Web.pdf`. Druck-PDF offen: Beschnitt, Schnittmarken, ICC-Profil und PDF/X-Standard der Druckerei fehlen.
+Web-PDF: `final/Eisele_Flyer_Humanoide_Roboter_de_Web.pdf`. Druck-PDF: laut Auftraggeber nicht benötigt.
