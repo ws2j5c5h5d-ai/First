@@ -1,0 +1,19 @@
+1	Badge „NEU“ neben „NEUHEIT“	(entfernt)
+1	Spaltenkopf „V0129-/1850-040601“ zweizeilig, 15,5 pt	„V0129-1850-040601“ einzeilig, 9.9 pt; „Schwenkkupplung“ auf Höhe der Nachbarspalten
+1	BAUWEISEN: Gruppen GERADE/WINKEL links gedrängt, rechts Leerfläche	Gruppen auf 1/4 und 3/4 der Blockbreite verteilt (Inhalt unverändert)
+2	Abbildung „Flanschseite“ oben rechts mit Bildunterschrift	(entfernt; Ansicht bleibt unter ANSICHTEN & DETAILS)
+2	Produktfoto 164 × 149 pt, Bildunterschrift links darunter	Produktfoto 213 × 194 pt (×1.30), Bildunterschrift rechtsbündig unten
+2	„Mittige Bohrung“ unter Abbildung „Stirnseite“	(entfernt; steht im Block SCHWENKKUPPLUNG)
+2	Block MUSTER & DATEN ANFRAGEN: ab y 594, Titel 10,5 pt, Text 8 pt, QR 47 pt	weiße Karte mit Navy-Kante ab y 571, Titel 12,5 pt, Text 8,6 pt, QR 62 pt
+3	Steckanschluss mit Lösehülse, Schlauch AD8 bis AD12	Schlauch AD8 bis AD12
+3	„… Kugellager Edelstahl“ / „/ Keramik“ (Wortrest allein)	„… POM,“ / „Kugellager Edelstahl/Keramik“
+3	„… erhältlich (628D-06xx,“ / „686D-06xx).“	„… erhältlich“ / „(628D-06xx, 686D-06xx).“
+4	(keine)	Fußnote „Nennmaße, Toleranzen siehe Maßblatt.“
+4	VT5528-0202: „ca. 11,6“ auf Kontur/Hilfslinie, Maßlinien 1,4 pt unter dem Bauteil	Maßlinien auf y 501,5 / 515 / 528,5 gezogen, Hilfslinien verlängert; Maßzahlen unverändert
+5	Maßzeichnungen 863-4218 / 887-4218: Beschriftung ca. 3,5–4 pt (Kurven), Toleranzen ±0,07 / ±0,1	neu gesetzt in 7 pt, Toleranzen entfernt; „für Schlauch mit Außen-Ø 3“ bzw. „für Schlauch mit AD“ + „3“ → „Schlauch AD3“ (wie S. 4)
+6	Maßzeichnungen SA2113-1 / SA2113-2: Beschriftung ca. 3,5 pt (Kurven), Bezugstexte senkrecht	neu gesetzt in 7 pt; „für Stecknippel SA2113-2“ / „für Kupplung SA2113-1“ waagerecht zweizeilig am Ende der Bezugslinie
+5	PROGRAMM 15	PROGRAMM P15
+5	* Programm 15 mit metrischem und zölligem Gewinde. …	* P15 mit metrischem und zölligem Gewinde. …
+5	(keine)	Fußnote „Nennmaße, Toleranzen siehe Maßblatt.“
+6	(keine)	Fußnote „Nennmaße, Toleranzen siehe Maßblatt.“ unter der Tabelle (Tabelle 6 pt höher, graues Band 3,4 pt länger)
+6	Footer-Logo: „HENN Connector Group“ weiß	„HENN Connector Group“ #FF0000 (EISELE und „Member of“ weiß, Vektor, Geometrie unverändert)
