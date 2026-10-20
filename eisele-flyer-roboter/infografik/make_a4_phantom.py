@@ -89,7 +89,7 @@ leader([(TX - 21, 312), (531, 312), (531, 386), (TX - 21, 386)]); leader([(531, 
 m = R(772, 878)
 tile('p_vt5528', TX, 470, 21, 'VT5528-0202'); leader([(TX - 21, 470), (531, 470), m]); marker(*m)
 # Hand / Werkzeug
-m = R(338, 692)
+m = R(300, 722)   # am Greiferkörper (Handfläche), nicht am drehenden Handgelenk
 for i, (nm, lab) in enumerate((('p_863', '863-4218'), ('p_887', '887-4218'), ('p_529', '529-5018G'))):
     tile(nm, 50 + i * 58, 512, 21, lab)
 leader([(50, 491), (50, 474), (166, 474), (166, 491)]); leader([(108, 491), (108, 474)]); leader([(108, 474), m]); marker(*m)
