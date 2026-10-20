@@ -3,7 +3,8 @@ import sys
 import numpy as np, cv2
 from PIL import Image
 src, out = sys.argv[1:3]
-SC = 4; S = 0.476; OX, OY = 10.5, 59.0; PW, PH = 595.28, 841.89
+SC = 4; PW, PH = 595.28, 841.89
+S, OX, OY = (float(v) for v in sys.argv[3:6]) if len(sys.argv) > 5 else (0.476, 10.5, 59.0)
 im = np.array(Image.open(src).convert('RGB'))
 px = SC / S                                       # Bildpixel je pt
 l, t = int(round(OX * px)), int(round(OY * px))
