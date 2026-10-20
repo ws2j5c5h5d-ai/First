@@ -1,0 +1,402 @@
+=== Seite 1
+  47.1   31.1  198.6   66.9 | 25.00 TeXGyreHeros-Bold      #0b335e | PROGRAMM
+  47.1   58.9  333.3   94.7 | 25.00 TeXGyreHeros-Bold      #0b335e | HUMANOIDE ROBOTER
+  47.1  663.4  122.0  684.9 | 15.00 TeXGyreHeros-Bold      #ffffff | VORTEILE
+  59.2  705.6  129.3  717.9 |  8.60 TeXGyreHeros-Regular   #ffffff | Aluminium, bleifrei
+  59.2  722.9  234.4  735.2 |  8.60 TeXGyreHeros-Regular   #ffffff | Extrem kleinbauend für kompletten Durchfluss
+  59.2  739.4  270.5  751.7 |  8.60 TeXGyreHeros-Regular   #ffffff | Verschiedenste Bauweisen: gerade, Winkel und weitere
+  59.2  756.6  184.6  768.9 |  8.60 TeXGyreHeros-Regular   #ffffff | Metrisches und zölliges Gewinde
+  59.2  773.1  163.8  785.4 |  8.60 TeXGyreHeros-Regular   #ffffff | Schlauchanschluss ab AD3
+  47.1  813.5  138.7  824.1 |  7.39 TeXGyreHeros-Regular   #ffffff | www.eisele-connectors.com
+ 324.8  663.4  416.1  684.9 | 15.00 TeXGyreHeros-Bold      #0b335e | BAUWEISEN
+ 343.2  751.9  376.6  761.9 |  7.00 TeXGyreHeros-Bold      #0b335e | GERADE
+ 325.6  764.6  394.9  774.5 |  6.90 TeXGyreHeros-Regular   #546f8e | 863-4218 · 529-5018G
+ 328.2  775.1  392.3  785.0 |  6.90 TeXGyreHeros-Regular   #546f8e | VT5528-0202 · 628D
+ 440.8  751.9  471.8  761.9 |  7.00 TeXGyreHeros-Bold      #0b335e | WINKEL
+ 422.8  764.6  490.5  774.5 |  6.90 TeXGyreHeros-Regular   #546f8e | 887-4218 schwenkbar
+ 448.4  775.1  464.9  785.0 |  6.90 TeXGyreHeros-Regular   #546f8e | 686D
+ 324.8  789.3  404.6  799.2 |  6.90 TeXGyreHeros-Regular   #0b335e | … und weitere Bauweisen
+ 324.8  805.9  484.0  815.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | Abbildungen unverbindlich, Änderungen vorbehalten,
+ 324.8  814.9  476.6  824.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | für Irrtümer und Druckfehler keine Haftung – 10.26
+  47.1  223.7  244.1  247.3 | 16.50 TeXGyreHeros-Bold      #0b335e | EXTREM KLEINBAUEND.
+  47.1  243.2  282.2  266.8 | 16.50 TeXGyreHeros-Bold      #0b335e | KOMPLETTER DURCHFLUSS.
+  47.1  468.4  226.3  489.9 | 15.00 TeXGyreHeros-Bold      #0b335e | PROGRAMMÜBERSICHT
+  47.1  516.5   82.3  526.4 |  6.90 TeXGyreHeros-Bold      #546f8e | NEUHEIT
+  90.2  516.5  104.7  525.4 |  6.20 TeXGyreHeros-Bold      #ffffff | NEU
+  47.1  528.6   96.6  550.8 | 15.49 TeXGyreHeros-Bold      #0b335e | V0129-
+  47.1  544.3  137.6  566.5 | 15.49 TeXGyreHeros-Bold      #0b335e | 1850-040601
+  47.1  569.2  137.2  579.5 |  7.20 TeXGyreHeros-Regular   #0b335e | Modulare Schwenkkupplung
+  47.1  590.7   84.8  600.6 |  6.90 TeXGyreHeros-Bold      #0b335e | → SEITE 2
+ 150.2  516.5  227.9  526.4 |  6.90 TeXGyreHeros-Bold      #546f8e | DREHANSCHLÜSSE
+ 150.2  528.6  236.4  550.8 | 15.49 TeXGyreHeros-Bold      #0b335e | 628D · 686D
+ 150.2  553.5  211.6  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | Gerade und Winkel
+ 150.2  563.2  200.6  573.5 |  7.20 TeXGyreHeros-Regular   #0b335e | max. 800 U/min
+ 150.2  590.7  188.0  600.6 |  6.90 TeXGyreHeros-Bold      #0b335e | → SEITE 3
+ 253.4  516.5  338.4  526.4 |  6.90 TeXGyreHeros-Bold      #546f8e | VERSCHRAUBUNGEN
+ 253.4  528.6  337.9  550.8 | 15.49 TeXGyreHeros-Bold      #0b335e | P12 · P5500
+ 253.4  553.5  312.9  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | Metrisch und zöllig
+ 253.4  563.2  309.0  573.5 |  7.20 TeXGyreHeros-Regular   #0b335e | Schlauch ab AD3
+ 253.4  590.7  291.2  600.6 |  6.90 TeXGyreHeros-Bold      #0b335e | → SEITE 4
+ 356.6  516.5  389.9  526.4 |  6.90 TeXGyreHeros-Bold      #546f8e | PUSH-IN
+ 356.6  528.6  384.0  550.8 | 15.49 TeXGyreHeros-Bold      #0b335e | P15
+ 356.6  553.5  416.1  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | Metrisch und zöllig
+ 356.6  563.2  412.2  573.5 |  7.20 TeXGyreHeros-Regular   #0b335e | Schlauch ab AD3
+ 356.6  590.7  394.4  600.6 |  6.90 TeXGyreHeros-Bold      #0b335e | → SEITE 5
+ 459.8  516.5  553.7  526.4 |  6.90 TeXGyreHeros-Bold      #546f8e | SCHNELLKUPPLUNGEN
+ 459.8  528.6  515.1  550.8 | 15.49 TeXGyreHeros-Bold      #0b335e | SA2113
+ 459.8  553.5  535.3  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | Kupplung + Stecknippel
+ 459.8  563.2  483.9  573.5 |  7.20 TeXGyreHeros-Regular   #0b335e | tropffrei
+ 459.8  590.7  497.6  600.6 |  6.90 TeXGyreHeros-Bold      #0b335e | → SEITE 6
+=== Seite 2
+  47.1   31.1  157.1   66.9 | 25.00 TeXGyreHeros-Bold      #0b335e | NEUHEIT
+  47.1   58.9  316.9   94.7 | 25.00 TeXGyreHeros-Bold      #0b335e | SCHWENKKUPPLUNG
+ 180.0  258.9  293.9  276.8 | 12.49 TeXGyreHeros-Bold      #0b335e | V0129-1850-040601
+ 180.0  276.0  271.8  286.3 |  7.20 TeXGyreHeros-Regular   #546f8e | Modulare Schwenkkupplung
+ 465.8  258.9  541.4  276.8 | 12.49 TeXGyreHeros-Bold      #0b335e | Flanschseite
+ 408.5  276.0  541.3  286.3 |  7.20 TeXGyreHeros-Regular   #546f8e | V0129-1850-040601 · Ansicht von hinten
+  47.1  349.9  217.8  371.4 | 15.00 TeXGyreHeros-Bold      #0b335e | ANSICHTEN & DETAILS
+  47.1  553.9   81.4  563.9 |  7.00 TeXGyreHeros-Bold      #0b335e | Stirnseite
+  47.1  565.7  210.6  575.7 |  7.00 TeXGyreHeros-Regular   #546f8e | Vier nummerierte Kanäle (1–4) und mittige Bohrung
+ 310.1  553.9  355.5  563.9 |  7.00 TeXGyreHeros-Bold      #0b335e | Flanschseite
+ 310.1  565.7  515.6  575.7 |  7.00 TeXGyreHeros-Regular   #546f8e | Sechs Innensechskantschrauben, vier nummerierte Kanäle (1–4)
+  47.1  594.2  204.1  609.2 | 10.50 TeXGyreHeros-Bold      #0b335e | MUSTER & DATEN ANFRAGEN
+  47.1  611.8  318.6  623.3 |  7.99 TeXGyreHeros-Regular   #0b335e | Technische Daten, Varianten und Anschlussgrößen erhalten Sie auf Anfrage.
+  47.1  623.3  196.1  634.7 |  7.99 TeXGyreHeros-Bold      #0b335e | info@eisele.eu · Tel. +49 (0)7151-1719-0
+  47.1  696.4  209.4  717.9 | 15.00 TeXGyreHeros-Bold      #ffffff | SCHWENKKUPPLUNG
+  59.2  737.1  240.1  749.4 |  8.60 TeXGyreHeros-Regular   #ffffff | Vier nummerierte Kanäle (1–4) in einem Bauteil
+  59.2  753.6  186.5  765.9 |  8.60 TeXGyreHeros-Regular   #ffffff | Mittige Bohrung auf der Stirnseite
+  59.2  770.9  119.2  783.2 |  8.60 TeXGyreHeros-Regular   #ffffff | Runde Bauform
+  47.1  813.5  138.7  824.1 |  7.39 TeXGyreHeros-Regular   #ffffff | www.eisele-connectors.com
+ 324.8  696.4  431.7  717.9 | 15.00 TeXGyreHeros-Bold      #0b335e | AUSFÜHRUNG
+ 337.0  737.1  473.2  749.4 |  8.60 TeXGyreHeros-Regular   #0b335e | Artikelnummer V0129-1850-040601
+ 337.0  753.6  526.4  765.9 |  8.60 TeXGyreHeros-Regular   #0b335e | Flanschseite mit sechs Innensechskantschrauben
+ 337.0  770.9  507.3  783.2 |  8.60 TeXGyreHeros-Regular   #0b335e | Technische Daten und Varianten auf Anfrage
+ 324.8  805.9  484.0  815.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | Abbildungen unverbindlich, Änderungen vorbehalten,
+ 324.8  814.9  476.6  824.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | für Irrtümer und Druckfehler keine Haftung – 10.26
+ 539.0  810.7  555.1  821.3 |  7.39 TeXGyreHeros-Bold      #0b335e | 2 / 6
+=== Seite 3
+  47.1   31.1  290.2   66.9 | 25.00 TeXGyreHeros-Bold      #0b335e | DREHANSCHLÜSSE
+  47.1   58.9  199.0   94.7 | 25.00 TeXGyreHeros-Bold      #0b335e | 628D & 686D
+ 191.3  246.9  221.2  264.8 | 12.49 TeXGyreHeros-Bold      #0b335e | 628D
+ 191.3  264.7  268.6  275.0 |  7.20 TeXGyreHeros-Regular   #546f8e | Gerader Drehanschluss
+ 511.6  246.9  541.4  264.8 | 12.49 TeXGyreHeros-Bold      #0b335e | 686D
+ 468.6  264.7  541.3  275.0 |  7.20 TeXGyreHeros-Regular   #546f8e | Winkel-Drehanschluss
+  47.1  335.6  261.7  357.1 | 15.00 TeXGyreHeros-Bold      #0b335e | DIMENSIONEN & VERSIONEN
+  68.2  467.6  105.0  477.6 |  7.00 TeXGyreHeros-Bold      #0b335e | 628D-0406
+  69.7  479.6  103.8  489.5 |  6.90 TeXGyreHeros-Regular   #546f8e | G1/4 · AD8
+ 151.8  467.6  188.6  477.6 |  7.00 TeXGyreHeros-Bold      #0b335e | 628D-0408
+ 151.4  479.6  189.3  489.5 |  6.90 TeXGyreHeros-Regular   #546f8e | G1/4 · AD10
+ 235.4  467.6  272.2  477.6 |  7.00 TeXGyreHeros-Bold      #0b335e | 628D-0409
+ 235.0  479.6  272.9  489.5 |  6.90 TeXGyreHeros-Regular   #546f8e | G1/4 · AD12
+ 331.2  467.6  368.1  477.6 |  7.00 TeXGyreHeros-Bold      #0b335e | 686D-0406
+ 332.7  479.6  366.8  489.5 |  6.90 TeXGyreHeros-Regular   #546f8e | G1/4 · AD8
+ 414.8  467.6  451.7  477.6 |  7.00 TeXGyreHeros-Bold      #0b335e | 686D-0408
+ 414.4  479.6  452.4  489.5 |  6.90 TeXGyreHeros-Regular   #546f8e | G1/4 · AD10
+ 498.5  467.6  535.3  477.6 |  7.00 TeXGyreHeros-Bold      #0b335e | 686D-0409
+ 498.1  479.6  536.0  489.5 |  6.90 TeXGyreHeros-Regular   #546f8e | G1/4 · AD12
+  47.1  501.6   79.6  511.3 |  6.80 TeXGyreHeros-Bold      #0b335e | ARTIKEL-
+  47.1  509.9   78.3  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | NUMMER
+ 135.8  509.9  170.8  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | BAUFORM
+ 204.7  509.9  237.9  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | GEWINDE
+ 265.2  501.6  279.4  511.3 |  6.80 TeXGyreHeros-Bold      #0b335e | FÜR
+ 252.8  509.9  291.8  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | SCHLAUCH
+ 312.2  509.9  323.2  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | SW
+ 341.1  509.9  362.2  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | I (mm)
+ 384.5  501.6  395.4  511.3 |  6.80 TeXGyreHeros-Bold      #0b335e | L1*
+ 381.4  509.9  398.4  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | (mm)
+ 425.2  501.6  434.0  511.3 |  6.80 TeXGyreHeros-Bold      #0b335e | D2
+ 421.1  509.9  438.1  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | (mm)
+ 459.7  501.6  481.7  511.3 |  6.80 TeXGyreHeros-Bold      #0b335e | NENN-
+ 459.7  509.9  481.7  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | WEITE
+ 507.3  501.6  540.2  511.3 |  6.80 TeXGyreHeros-Bold      #0b335e | GEWICHT
+ 519.3  509.9  528.2  519.6 |  6.80 TeXGyreHeros-Bold      #0b335e | (g)
+  47.1  525.9   82.6  536.2 |  7.20 TeXGyreHeros-Bold      #0b335e | 628D-0406
+ 115.4  525.7  191.3  536.0 |  7.20 TeXGyreHeros-Regular   #0b335e | Gerader Drehanschluss
+ 213.6  525.7  229.2  536.0 |  7.20 TeXGyreHeros-Regular   #0b335e | G1/4
+ 253.7  525.7  291.1  536.0 |  7.20 TeXGyreHeros-Regular   #0b335e | AD8 (5/16")
+ 313.7  525.7  321.7  536.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 20
+ 346.7  525.7  356.7  536.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 7,5
+ 383.0  525.7  397.0  536.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 52,9
+ 422.7  525.7  436.7  536.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 21,8
+ 458.8  525.7  482.8  536.0 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 6,5
+ 519.8  525.7  527.8  536.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 56
+  47.1  541.7   82.6  552.0 |  7.20 TeXGyreHeros-Bold      #0b335e | 628D-0408
+ 115.4  541.5  191.3  551.8 |  7.20 TeXGyreHeros-Regular   #0b335e | Gerader Drehanschluss
+ 213.6  541.5  229.2  551.8 |  7.20 TeXGyreHeros-Regular   #0b335e | G1/4
+ 263.4  541.5  281.4  551.8 |  7.20 TeXGyreHeros-Regular   #0b335e | AD10
+ 313.7  541.5  321.7  551.8 |  7.20 TeXGyreHeros-Regular   #0b335e | 20
+ 346.7  541.5  356.7  551.8 |  7.20 TeXGyreHeros-Regular   #0b335e | 7,5
+ 383.0  541.5  397.0  551.8 |  7.20 TeXGyreHeros-Regular   #0b335e | 55,4
+ 422.7  541.5  436.7  551.8 |  7.20 TeXGyreHeros-Regular   #0b335e | 21,8
+ 461.8  541.5  479.8  551.8 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 8
+ 519.8  541.5  527.8  551.8 |  7.20 TeXGyreHeros-Regular   #0b335e | 59
+  47.1  557.4   82.6  567.7 |  7.20 TeXGyreHeros-Bold      #0b335e | 628D-0409
+ 115.4  557.2  191.3  567.5 |  7.20 TeXGyreHeros-Regular   #0b335e | Gerader Drehanschluss
+ 213.6  557.2  229.2  567.5 |  7.20 TeXGyreHeros-Regular   #0b335e | G1/4
+ 263.4  557.2  281.4  567.5 |  7.20 TeXGyreHeros-Regular   #0b335e | AD12
+ 313.7  557.2  321.7  567.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 20
+ 346.7  557.2  356.7  567.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 7,5
+ 383.0  557.2  397.0  567.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 61,4
+ 422.7  557.2  436.7  567.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 21,8
+ 461.8  557.2  479.8  567.5 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 8
+ 519.8  557.2  527.8  567.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 75
+  47.1  572.4   82.6  582.7 |  7.20 TeXGyreHeros-Bold      #0b335e | 686D-0406
+ 117.7  572.2  189.0  582.5 |  7.20 TeXGyreHeros-Regular   #0b335e | Winkel-Drehanschluss
+ 213.6  572.2  229.2  582.5 |  7.20 TeXGyreHeros-Regular   #0b335e | G1/4
+ 253.7  572.2  291.1  582.5 |  7.20 TeXGyreHeros-Regular   #0b335e | AD8 (5/16")
+ 313.7  572.2  321.7  582.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 20
+ 346.7  572.2  356.7  582.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 7,5
+ 383.0  572.2  397.0  582.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 47,5
+ 422.7  572.2  436.7  582.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 21,8
+ 461.8  572.2  479.8  582.5 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 6
+ 519.8  572.2  527.8  582.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 75
+  47.1  588.2   82.6  598.5 |  7.20 TeXGyreHeros-Bold      #0b335e | 686D-0408
+ 117.7  588.0  189.0  598.3 |  7.20 TeXGyreHeros-Regular   #0b335e | Winkel-Drehanschluss
+ 213.6  588.0  229.2  598.3 |  7.20 TeXGyreHeros-Regular   #0b335e | G1/4
+ 263.4  588.0  281.4  598.3 |  7.20 TeXGyreHeros-Regular   #0b335e | AD10
+ 313.7  588.0  321.7  598.3 |  7.20 TeXGyreHeros-Regular   #0b335e | 20
+ 346.7  588.0  356.7  598.3 |  7.20 TeXGyreHeros-Regular   #0b335e | 7,5
+ 383.0  588.0  397.0  598.3 |  7.20 TeXGyreHeros-Regular   #0b335e | 47,5
+ 422.7  588.0  436.7  598.3 |  7.20 TeXGyreHeros-Regular   #0b335e | 21,8
+ 461.8  588.0  479.8  598.3 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 8
+ 519.8  588.0  527.8  598.3 |  7.20 TeXGyreHeros-Regular   #0b335e | 76
+  47.1  603.9   82.6  614.2 |  7.20 TeXGyreHeros-Bold      #0b335e | 686D-0409
+ 117.7  603.7  189.0  614.0 |  7.20 TeXGyreHeros-Regular   #0b335e | Winkel-Drehanschluss
+ 213.6  603.7  229.2  614.0 |  7.20 TeXGyreHeros-Regular   #0b335e | G1/4
+ 263.4  603.7  281.4  614.0 |  7.20 TeXGyreHeros-Regular   #0b335e | AD12
+ 313.7  603.7  321.7  614.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 20
+ 346.7  603.7  356.7  614.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 7,5
+ 383.0  603.7  397.0  614.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 51,5
+ 422.7  603.7  436.7  614.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 21,8
+ 461.8  603.7  479.8  614.0 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 8
+ 517.8  603.7  529.8  614.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 101
+  47.1  628.2   49.7  638.1 |  6.90 TeXGyreHeros-Bold      #0b335e | *
+  49.7  628.1  450.4  638.0 |  6.90 TeXGyreHeros-Regular   #0b335e |  Maß L1 laut Katalog-Maßzeichnung der jeweiligen Bauform, alle Maße in mm. Abbildungen der Versionen maßstäblich zueinander.
+  47.1  696.4  193.4  717.9 | 15.00 TeXGyreHeros-Bold      #ffffff | DREHANSCHLÜSSE
+  59.2  737.1  158.4  749.4 |  8.60 TeXGyreHeros-Regular   #ffffff | Drehzahl: max. 800 U/min
+  59.2  753.6  194.8  765.9 |  8.60 TeXGyreHeros-Regular   #ffffff | Arbeitsdruckbereich: -0,9 bis 16 bar
+  59.2  770.9  182.8  783.2 |  8.60 TeXGyreHeros-Regular   #ffffff | Temperaturbereich: 0 bis +50 °C
+  59.2  787.4  232.2  799.7 |  8.60 TeXGyreHeros-Regular   #ffffff | Bauweisen gerade (628D) und Winkel (686D)
+  47.1  813.5  138.7  824.1 |  7.39 TeXGyreHeros-Regular   #ffffff | www.eisele-connectors.com
+ 324.8  696.4  454.0  717.9 | 15.00 TeXGyreHeros-Bold      #0b335e | EIGENSCHAFTEN
+ 337.0  737.1  497.5  749.4 |  8.60 TeXGyreHeros-Regular   #0b335e | Werkstoff: Messing vernickelt, blank, POM
+ 337.0  753.6  513.7  765.9 |  8.60 TeXGyreHeros-Regular   #0b335e | Whitworth-Rohrgewinde, gekammerter O-Ring
+ 337.0  770.9  423.9  783.2 |  8.60 TeXGyreHeros-Regular   #0b335e | Dichtungen NBR, FPM
+ 337.0  787.4  548.4  799.7 |  8.60 TeXGyreHeros-Regular   #0b335e | Steckanschluss mit Lösehülse, Schlauch AD8 bis AD12
+ 324.8  805.9  484.0  815.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | Abbildungen unverbindlich, Änderungen vorbehalten,
+ 324.8  814.9  476.6  824.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | für Irrtümer und Druckfehler keine Haftung – 10.26
+ 539.0  810.7  555.1  821.3 |  7.39 TeXGyreHeros-Bold      #0b335e | 3 / 6
+=== Seite 4
+  47.1   31.1  314.0   66.9 | 25.00 TeXGyreHeros-Bold      #0b335e | VERSCHRAUBUNGEN
+  47.1   58.9  196.2   94.7 | 25.00 TeXGyreHeros-Bold      #0b335e | P12 & P5500
+ 205.5  244.7  268.0  262.6 | 12.49 TeXGyreHeros-Bold      #0b335e | 529-5018G
+ 205.5  261.7  249.1  272.0 |  7.20 TeXGyreHeros-Regular   #546f8e | Gerade · P12
+ 465.5  244.7  541.4  262.6 | 12.49 TeXGyreHeros-Bold      #0b335e | VT5528-0202
+ 489.6  261.7  541.3  272.0 |  7.20 TeXGyreHeros-Regular   #546f8e | Gerade · P5500
+  47.1  335.6  261.7  357.1 | 15.00 TeXGyreHeros-Bold      #0b335e | DIMENSIONEN & VERSIONEN
+  47.1  374.6   84.3  384.6 |  7.00 TeXGyreHeros-Bold      #0b335e | 529-5018G
+  88.5  374.5  196.8  384.5 |  7.00 TeXGyreHeros-Regular   #546f8e | Gerade Einschraubverschraubung
+ 320.3  374.6  365.6  384.6 |  7.00 TeXGyreHeros-Bold      #0b335e | VT5528-0202
+ 369.9  374.5  476.6  384.5 |  7.00 TeXGyreHeros-Regular   #546f8e | Einschraubverschraubung gerade
+  47.1  559.4   79.6  569.1 |  6.80 TeXGyreHeros-Bold      #0b335e | ARTIKEL-
+  47.1  567.6   78.3  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | NUMMER
+ 120.5  559.4  137.8  569.1 |  6.80 TeXGyreHeros-Bold      #0b335e | PRO-
+ 115.7  567.6  142.6  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | GRAMM
+ 151.1  567.6  186.1  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | BAUFORM
+ 190.7  567.6  226.8  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | GEWINDE*
+ 243.9  559.4  258.2  569.1 |  6.80 TeXGyreHeros-Bold      #0b335e | FÜR
+ 233.3  567.6  272.2  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | SCHLAUCH
+ 279.7  559.4  301.7  569.1 |  6.80 TeXGyreHeros-Bold      #0b335e | NENN-
+ 279.7  567.6  301.8  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | WEITE
+ 337.5  567.6  381.2  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | WERKSTOFF
+ 416.8  559.4  436.2  569.1 |  6.80 TeXGyreHeros-Bold      #0b335e | DICH-
+ 416.6  567.6  436.4  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | TUNG
+ 454.3  567.6  465.3  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | SW
+ 483.0  559.4  507.4  569.1 |  6.80 TeXGyreHeros-Bold      #0b335e | LÄNGE
+ 486.7  567.6  503.7  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | (mm)
+ 518.5  559.4  551.4  569.1 |  6.80 TeXGyreHeros-Bold      #0b335e | GEWICHT
+ 530.5  567.6  539.4  577.3 |  6.80 TeXGyreHeros-Bold      #0b335e | (g)
+  47.1  584.4   83.1  594.7 |  7.20 TeXGyreHeros-Bold      #0b335e | 529-5018G
+ 122.8  584.2  135.6  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | P12
+ 155.5  584.2  179.5  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | Gerade
+ 203.6  584.2  213.6  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | M5
+ 244.1  584.2  258.1  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | AD3
+ 281.8  584.2  299.8  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 2
+ 314.9  584.2  403.9  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | Messing galv. ZnNi schwarz
+ 419.0  584.2  434.2  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | NBR
+ 457.9  584.2  461.9  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 8
+ 488.3  584.2  502.3  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 16,5
+ 527.2  584.2  542.8  594.5 |  7.20 TeXGyreHeros-Regular   #0b335e | ca. 5
+  47.1  600.2   90.8  610.5 |  7.20 TeXGyreHeros-Bold      #0b335e | VT5528-0202
+ 118.8  600.0  139.6  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | P5500
+ 155.5  600.0  179.5  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | Gerade
+ 200.8  600.0  216.4  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | G1/8
+ 244.1  600.0  258.1  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | AD4
+ 281.8  600.0  299.8  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 3
+ 333.0  600.0  385.8  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | Aluminium blank
+ 419.0  600.0  434.2  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | FPM
+ 448.9  600.0  470.9  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | 13 / 10
+ 482.5  600.0  508.1  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | ca. 21,6
+ 527.2  600.0  542.8  610.3 |  7.20 TeXGyreHeros-Regular   #0b335e | ca. 4
+  47.1  618.5   49.7  628.4 |  6.90 TeXGyreHeros-Bold      #0b335e | *
+  49.7  618.3  370.7  628.2 |  6.90 TeXGyreHeros-Regular   #0b335e |  Programme P12 und P5500 mit metrischem und zölligem Gewinde. Länge = Gesamtlänge laut Maßblatt.
+  47.1  696.4  169.3  717.9 | 15.00 TeXGyreHeros-Bold      #ffffff | PROGRAMM P12
+  59.2  737.1  184.6  749.4 |  8.60 TeXGyreHeros-Regular   #ffffff | Metrisches und zölliges Gewinde
+  59.2  753.6  125.6  765.9 |  8.60 TeXGyreHeros-Regular   #ffffff | Schlauch ab AD3
+  59.2  770.9  176.6  783.2 |  8.60 TeXGyreHeros-Regular   #ffffff | Bauweise gerade (529-5018G)
+  47.1  813.5  138.7  824.1 |  7.39 TeXGyreHeros-Regular   #ffffff | www.eisele-connectors.com
+ 324.8  696.4  463.9  717.9 | 15.00 TeXGyreHeros-Bold      #0b335e | PROGRAMM P5500
+ 337.0  737.1  462.4  749.4 |  8.60 TeXGyreHeros-Regular   #0b335e | Metrisches und zölliges Gewinde
+ 337.0  753.6  403.4  765.9 |  8.60 TeXGyreHeros-Regular   #0b335e | Schlauch ab AD4
+ 337.0  770.9  525.7  783.2 |  8.60 TeXGyreHeros-Regular   #0b335e | VT5528-0202: Aluminium blank, Dichtungen FPM
+ 324.8  805.9  484.0  815.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | Abbildungen unverbindlich, Änderungen vorbehalten,
+ 324.8  814.9  476.6  824.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | für Irrtümer und Druckfehler keine Haftung – 10.26
+ 539.0  810.7  555.1  821.3 |  7.39 TeXGyreHeros-Bold      #0b335e | 4 / 6
+=== Seite 5
+  47.1   31.1  150.1   66.9 | 25.00 TeXGyreHeros-Bold      #0b335e | PUSH-IN
+  47.1   58.9  233.5   94.7 | 25.00 TeXGyreHeros-Bold      #0b335e | PROGRAMM 15
+ 211.2  244.7  264.0  262.6 | 12.49 TeXGyreHeros-Bold      #0b335e | 863-4218
+ 211.2  261.7  311.0  272.0 |  7.20 TeXGyreHeros-Regular   #546f8e | Gerade · Einschraubanschluss
+ 488.6  244.7  541.4  262.6 | 12.49 TeXGyreHeros-Bold      #0b335e | 887-4218
+ 400.8  261.7  541.3  272.0 |  7.20 TeXGyreHeros-Regular   #546f8e | Winkel, schwenkbar · Einschraubanschluss
+  47.1  335.6  261.7  357.1 | 15.00 TeXGyreHeros-Bold      #0b335e | DIMENSIONEN & VERSIONEN
+  47.1  374.6   78.6  384.6 |  7.00 TeXGyreHeros-Bold      #0b335e | 863-4218
+  82.8  374.5  174.3  384.5 |  7.00 TeXGyreHeros-Regular   #546f8e | Einschraubanschluss gerade
+ 320.3  374.6  351.8  384.6 |  7.00 TeXGyreHeros-Bold      #0b335e | 887-4218
+ 356.1  374.5  489.1  384.5 |  7.00 TeXGyreHeros-Regular   #546f8e | Winkel-Einschraubanschluss, schwenkbar
+  47.1  566.9   79.6  576.6 |  6.80 TeXGyreHeros-Bold      #0b335e | ARTIKEL-
+  47.1  574.4   78.3  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | NUMMER
+ 129.5  574.4  164.5  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | BAUFORM
+ 186.8  574.4  222.8  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | GEWINDE*
+ 240.0  566.9  254.2  576.6 |  6.80 TeXGyreHeros-Bold      #0b335e | FÜR
+ 229.3  574.4  268.3  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | SCHLAUCH
+ 275.8  566.9  297.8  576.6 |  6.80 TeXGyreHeros-Bold      #0b335e | NENN-
+ 275.8  574.4  297.8  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | WEITE
+ 323.0  574.4  366.7  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | WERKSTOFF
+ 391.8  566.9  411.3  576.6 |  6.80 TeXGyreHeros-Bold      #0b335e | DICH-
+ 391.7  574.4  411.4  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | TUNG
+ 440.0  574.4  451.0  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | SW
+ 480.0  566.9  504.5  576.6 |  6.80 TeXGyreHeros-Bold      #0b335e | LÄNGE
+ 483.8  574.4  500.7  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | (mm)
+ 517.3  566.9  550.2  576.6 |  6.80 TeXGyreHeros-Bold      #0b335e | GEWICHT
+ 529.3  574.4  538.3  584.1 |  6.80 TeXGyreHeros-Bold      #0b335e | (g)
+  47.1  591.2   77.5  601.5 |  7.20 TeXGyreHeros-Bold      #0b335e | 863-4218
+ 135.1  591.0  159.1  601.3 |  7.20 TeXGyreHeros-Regular   #0b335e | Gerade
+ 199.6  591.0  209.6  601.3 |  7.20 TeXGyreHeros-Regular   #0b335e | M3
+ 240.2  591.0  254.1  601.3 |  7.20 TeXGyreHeros-Regular   #0b335e | AD3
+ 274.8  591.0  298.8  601.3 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 1,5
+ 315.5  591.0  374.4  601.3 |  7.20 TeXGyreHeros-Regular   #0b335e | Messing vernickelt
+ 394.0  591.0  409.2  601.3 |  7.20 TeXGyreHeros-Regular   #0b335e | NBR
+ 422.3  591.0  468.7  601.3 |  7.20 TeXGyreHeros-Regular   #0b335e | Innen-6-kt. 1,5
+ 479.5  591.0  505.1  601.3 |  7.20 TeXGyreHeros-Regular   #0b335e | ca. 16,7
+ 526.1  591.0  541.7  601.3 |  7.20 TeXGyreHeros-Regular   #0b335e | ca. 2
+  47.1  606.9   77.5  617.2 |  7.20 TeXGyreHeros-Bold      #0b335e | 887-4218
+ 115.2  606.7  179.0  617.0 |  7.20 TeXGyreHeros-Regular   #0b335e | Winkel, schwenkbar
+ 199.6  606.7  209.6  617.0 |  7.20 TeXGyreHeros-Regular   #0b335e | M3
+ 240.2  606.7  254.1  617.0 |  7.20 TeXGyreHeros-Regular   #0b335e | AD3
+ 274.8  606.7  298.8  617.0 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 1,2
+ 315.5  606.7  374.4  617.0 |  7.20 TeXGyreHeros-Regular   #0b335e | Messing vernickelt
+ 394.0  606.7  409.2  617.0 |  7.20 TeXGyreHeros-Regular   #0b335e | NBR
+ 436.5  606.7  454.6  617.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 10 / 8
+ 479.5  606.7  505.1  617.0 |  7.20 TeXGyreHeros-Regular   #0b335e | ca. 18,8
+ 526.1  606.7  541.7  617.0 |  7.20 TeXGyreHeros-Regular   #0b335e | ca. 9
+  47.1  630.5   49.7  640.4 |  6.90 TeXGyreHeros-Bold      #0b335e | *
+  49.7  630.3  327.0  640.2 |  6.90 TeXGyreHeros-Regular   #0b335e |  Programm 15 mit metrischem und zölligem Gewinde. Länge = Gesamtlänge laut Maßblatt.
+  47.1  696.4  159.3  717.9 | 15.00 TeXGyreHeros-Bold      #ffffff | PROGRAMM 15
+  59.2  737.1  184.6  749.4 |  8.60 TeXGyreHeros-Regular   #ffffff | Metrisches und zölliges Gewinde
+  59.2  753.6  125.6  765.9 |  8.60 TeXGyreHeros-Regular   #ffffff | Schlauch ab AD3
+  59.2  770.9  225.5  783.2 |  8.60 TeXGyreHeros-Regular   #ffffff | Bauweisen gerade und Winkel, schwenkbar
+  47.1  813.5  138.7  824.1 |  7.39 TeXGyreHeros-Regular   #ffffff | www.eisele-connectors.com
+ 324.8  696.4  454.0  717.9 | 15.00 TeXGyreHeros-Bold      #0b335e | EIGENSCHAFTEN
+ 337.0  737.1  514.2  749.4 |  8.60 TeXGyreHeros-Regular   #0b335e | Werkstoff Messing vernickelt, Dichtungen NBR
+ 337.0  753.6  491.6  765.9 |  8.60 TeXGyreHeros-Regular   #0b335e | Anschlussgewinde M3 für Schlauch AD3
+ 337.0  770.9  512.5  783.2 |  8.60 TeXGyreHeros-Regular   #0b335e | Gewicht ca. 2 g (gerade) bzw. ca. 9 g (Winkel)
+ 324.8  805.9  484.0  815.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | Abbildungen unverbindlich, Änderungen vorbehalten,
+ 324.8  814.9  476.6  824.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | für Irrtümer und Druckfehler keine Haftung – 10.26
+ 539.0  810.7  555.1  821.3 |  7.39 TeXGyreHeros-Bold      #0b335e | 5 / 6
+=== Seite 6
+  47.1   31.1  340.6   66.9 | 25.00 TeXGyreHeros-Bold      #0b335e | SCHNELLKUPPLUNGEN
+  47.1   58.9  370.1   94.7 | 25.00 TeXGyreHeros-Bold      #0b335e | EDELSTAHL & ALUMINIUM
+ 194.2  216.2  250.2  234.1 | 12.49 TeXGyreHeros-Bold      #0b335e | SA2113-1
+ 194.2  233.2  301.2  243.5 |  7.20 TeXGyreHeros-Regular   #546f8e | Schnellschlusskupplung, tropffrei
+ 485.4  216.2  541.4  234.1 | 12.49 TeXGyreHeros-Bold      #0b335e | SA2113-2
+ 474.7  233.2  541.3  243.5 |  7.20 TeXGyreHeros-Regular   #546f8e | Stecknippel, tropffrei
+  47.1  298.9  261.7  320.4 | 15.00 TeXGyreHeros-Bold      #0b335e | DIMENSIONEN & VERSIONEN
+  47.1  336.4   80.4  346.4 |  7.00 TeXGyreHeros-Bold      #0b335e | SA2113-1
+  84.6  336.2  188.7  346.2 |  7.00 TeXGyreHeros-Regular   #546f8e | Schnellschlusskupplung, tropffrei
+ 306.1  336.4  339.5  346.4 |  7.00 TeXGyreHeros-Bold      #0b335e | SA2113-2
+ 343.7  336.2  408.5  346.2 |  7.00 TeXGyreHeros-Regular   #546f8e | Stecknippel, tropffrei
+  47.1  500.1   79.6  509.8 |  6.80 TeXGyreHeros-Bold      #0b335e | ARTIKEL-
+  47.1  508.4   78.3  518.1 |  6.80 TeXGyreHeros-Bold      #0b335e | NUMMER
+ 140.8  508.4  185.6  518.1 |  6.80 TeXGyreHeros-Bold      #0b335e | BENENNUNG
+ 224.5  508.4  257.8  518.1 |  6.80 TeXGyreHeros-Bold      #0b335e | GEWINDE
+ 272.6  500.1  294.7  509.8 |  6.80 TeXGyreHeros-Bold      #0b335e | NENN-
+ 272.6  508.4  294.7  518.1 |  6.80 TeXGyreHeros-Bold      #0b335e | WEITE
+ 336.4  508.4  380.1  518.1 |  6.80 TeXGyreHeros-Bold      #0b335e | WERKSTOFF
+ 418.8  500.1  438.2  509.8 |  6.80 TeXGyreHeros-Bold      #0b335e | DICH-
+ 418.7  508.4  438.4  518.1 |  6.80 TeXGyreHeros-Bold      #0b335e | TUNG
+ 454.2  508.4  465.2  518.1 |  6.80 TeXGyreHeros-Bold      #0b335e | SW
+ 481.5  500.1  505.9  509.8 |  6.80 TeXGyreHeros-Bold      #0b335e | LÄNGE
+ 485.2  508.4  502.2  518.1 |  6.80 TeXGyreHeros-Bold      #0b335e | (mm)
+ 518.1  500.1  551.0  509.8 |  6.80 TeXGyreHeros-Bold      #0b335e | GEWICHT
+ 530.1  508.4  539.0  518.1 |  6.80 TeXGyreHeros-Bold      #0b335e | (g)
+  47.1  528.9   79.3  539.2 |  7.20 TeXGyreHeros-Bold      #0b335e | SA2113-1
+ 110.8  528.7  215.7  539.0 |  7.20 TeXGyreHeros-Regular   #0b335e | Schnellschlusskupplung, tropffrei
+ 236.2  528.7  246.2  539.0 |  7.20 TeXGyreHeros-Regular   #0b335e | M5
+ 271.7  528.7  295.7  539.0 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 2,5
+ 318.1  525.0  398.5  535.3 |  7.20 TeXGyreHeros-Regular   #0b335e | Edelstahl 1.4404 (316L) /
+ 334.9  533.2  381.7  543.5 |  7.20 TeXGyreHeros-Regular   #0b335e | 1.4571 (316Ti)
+ 421.0  528.7  436.2  539.0 |  7.20 TeXGyreHeros-Regular   #0b335e | FPM
+ 455.8  528.7  463.8  539.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 10
+ 486.8  528.7  500.8  539.0 |  7.20 TeXGyreHeros-Regular   #0b335e | 30,3
+ 524.8  528.7  544.4  539.0 |  7.20 TeXGyreHeros-Regular   #0b335e | ca. 13
+  47.1  553.7   79.3  564.0 |  7.20 TeXGyreHeros-Bold      #0b335e | SA2113-2
+ 130.7  553.5  195.9  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | Stecknippel, tropffrei
+ 236.2  553.5  246.2  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | M5
+ 271.7  553.5  295.7  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | NW 2,5
+ 318.1  549.0  398.5  559.3 |  7.20 TeXGyreHeros-Regular   #0b335e | Edelstahl 1.4404 (316L) /
+ 334.9  558.0  381.7  568.3 |  7.20 TeXGyreHeros-Regular   #0b335e | 1.4571 (316Ti)
+ 421.0  553.5  436.2  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | FPM
+ 455.8  553.5  463.8  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | 10
+ 486.8  553.5  500.8  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | 33,1
+ 526.8  553.5  542.4  563.8 |  7.20 TeXGyreHeros-Regular   #0b335e | ca. 8
+  47.1  582.2  124.2  597.2 | 10.50 TeXGyreHeros-Bold      #0b335e | DURCHFLUSS*
+ 131.2  585.7  208.7  596.0 |  7.20 TeXGyreHeros-Regular   #546f8e | SA2113-1 → SA2113-2
+  54.3  687.5   67.6  697.3 |  6.80 TeXGyreHeros-Regular   #0b335e | 0,01
+  82.6  687.5   95.9  697.3 |  6.80 TeXGyreHeros-Regular   #0b335e | 0,02
+ 120.1  687.5  133.4  697.3 |  6.80 TeXGyreHeros-Regular   #0b335e | 0,05
+ 150.3  687.5  159.8  697.3 |  6.80 TeXGyreHeros-Regular   #0b335e | 0,1
+ 178.7  687.5  188.1  697.3 |  6.80 TeXGyreHeros-Regular   #0b335e | 0,2
+ 216.1  687.5  225.6  697.3 |  6.80 TeXGyreHeros-Regular   #0b335e | 0,5
+ 247.3  687.5  251.1  697.3 |  6.80 TeXGyreHeros-Regular   #0b335e | 1
+ 275.6  687.5  279.4  697.3 |  6.80 TeXGyreHeros-Regular   #0b335e | 2
+  53.8  679.9   57.5  689.6 |  6.80 TeXGyreHeros-Regular   #0b335e | 0
+  48.1  668.3   57.5  678.0 |  6.80 TeXGyreHeros-Regular   #0b335e | 0,5
+  53.8  656.6   57.5  666.4 |  6.80 TeXGyreHeros-Regular   #0b335e | 1
+  48.1  645.0   57.5  654.8 |  6.80 TeXGyreHeros-Regular   #0b335e | 1,5
+  53.8  633.4   57.5  643.1 |  6.80 TeXGyreHeros-Regular   #0b335e | 2
+  48.1  621.8   57.5  631.5 |  6.80 TeXGyreHeros-Regular   #0b335e | 2,5
+  53.8  610.2   57.5  619.9 |  6.80 TeXGyreHeros-Regular   #0b335e | 3
+ 130.8  697.6  207.3  707.7 |  7.09 TeXGyreHeros-Bold      #0b335e | DRUCKABFALL [bar]
+  35.4  612.2   45.5  689.8 |  7.09 TeXGyreHeros-Bold      #0b335e | DURCHFLUSS [l/min]
+ 183.8  629.8  244.7  639.6 |  6.80 TeXGyreHeros-Bold      #0b335e | 1,83 l/min bei 1 bar
+ 324.8  582.2  416.0  597.2 | 10.50 TeXGyreHeros-Bold      #0b335e | EIGENSCHAFTEN
+ 337.0  612.7  409.9  624.0 |  7.90 TeXGyreHeros-Regular   #0b335e | Medium: Kühlwasser
+ 337.0  628.4  452.3  639.7 |  7.90 TeXGyreHeros-Regular   #0b335e | Arbeitsdruckbereich: 0 bis 10 bar
+ 337.0  644.2  428.9  655.5 |  7.90 TeXGyreHeros-Regular   #0b335e | Temperatur: 0 bis +100 °C
+ 337.0  659.9  406.7  671.2 |  7.90 TeXGyreHeros-Regular   #0b335e | Kvs-Wert: 0,11 m³/h
+ 406.7  660.1  409.8  671.4 |  7.90 TeXGyreHeros-Bold      #0b335e | *
+ 337.0  677.2  485.6  688.5 |  7.90 TeXGyreHeros-Regular   #0b335e | Bei 1 bar Druckabfall: 1,83 l/min · 2,43 m/s
+ 485.6  677.4  488.7  688.7 |  7.90 TeXGyreHeros-Bold      #0b335e | *
+ 337.0  693.7  512.5  705.0 |  7.90 TeXGyreHeros-Regular   #0b335e | Verbinden: Schiebemuffe in Pfeilrichtung schieben
+  47.1  714.6   49.7  724.3 |  6.80 TeXGyreHeros-Bold      #0b335e | *
+  49.7  714.4  273.8  724.2 |  6.80 TeXGyreHeros-Regular   #6e6d72 |  Simulierte Werte unter Idealbedingungen; Durchflussrichtung Kupplung →
+  47.1  724.2  258.0  733.9 |  6.80 TeXGyreHeros-Regular   #6e6d72 | Stecknippel, Medium Wasser, Umgebungstemperatur 20 °C. Im realen
+  47.1  733.9  160.2  743.7 |  6.80 TeXGyreHeros-Regular   #6e6d72 | Einsatz können die Werte abweichen.
+  47.1  763.7  204.1  778.7 | 10.50 TeXGyreHeros-Bold      #ffffff | MUSTER & DATEN ANFRAGEN
+  47.1  781.8  120.1  793.8 |  8.40 TeXGyreHeros-Bold      #ffffff | EISELE | Germany
+  47.1  793.6  199.5  805.6 |  8.40 TeXGyreHeros-Regular   #ffffff | info@eisele.eu · Tel. +49 (0)7151-1719-0
+  47.1  805.6  151.0  817.6 |  8.40 TeXGyreHeros-Regular   #ffffff | www.eisele-connectors.com
+ 396.4  723.4  555.6  733.2 |  6.80 TeXGyreHeros-Regular   #6e6d72 | Abbildungen unverbindlich, Änderungen vorbehalten,
+ 403.8  733.2  555.6  742.9 |  6.80 TeXGyreHeros-Regular   #6e6d72 | für Irrtümer und Druckfehler keine Haftung – 10.26
+ 539.0  814.4  555.1  825.0 |  7.39 TeXGyreHeros-Bold      #ffffff | 6 / 6

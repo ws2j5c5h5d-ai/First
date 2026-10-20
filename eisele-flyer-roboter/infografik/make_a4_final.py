@@ -50,7 +50,7 @@ c.setFont('HB', 25)
 c.drawString(46, Y(60), 'PROGRAMM')
 c.drawString(46, Y(89), 'HUMANOIDE ROBOTER')
 c.setFillColor(SOFT); c.setFont('HB', 11.5)
-c.drawString(46, Y(116), 'EXTREM KLEINBAUEND. KOMPLETTER DURCHFLUSS.')
+c.drawString(46, Y(116), 'EXTREM KLEINBAUEND. AB M3 UND AD3.')
 c.setFillColor(WHITE); c.roundRect(452, Y(84), 112, 50, 5, stroke=0, fill=1)
 
 
