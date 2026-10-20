@@ -80,3 +80,11 @@ Ausgabe: `final/Eisele_Flyer_Humanoide_Roboter_de_6S_v2.pdf`, Skript `korrektur/
 | 6 | Footer-Logo: „HENN Connector Group“ weiß | „HENN Connector Group“ #FF0000 (EISELE und „Member of“ weiß, Vektor, Geometrie unverändert) |
 
 Hinweise: Seite 3 EIGENSCHAFTEN steht laut PDF in 7,6 pt (nicht 8,6 pt) und bleibt in 7,6 pt; 8,6 pt passt nicht über den Haftungshinweis. Fußnote S. 5: zweiter Satz „Länge = Gesamtlänge laut Maßblatt.“ beibehalten (wie S. 4). Rot im Footer-Logo S. 6: #FF0000 aus `quellen/HENN_connector_group_logo_aus_Praesentation1.svg`.
+
+## Letzte Runde
+
+| Seite | alt | neu |
+|---|---|---|
+| 2 | Titel „NEUHEIT / SCHWENKKUPPLUNG“ | Titel „SCHWENKKUPPLUNG“ (Zeile „NEUHEIT“ entfernt, Lage unverändert) |
+
+Web-PDF: `final/Eisele_Flyer_Humanoide_Roboter_de_Web.pdf`. Druck-PDF offen: Beschnitt, Schnittmarken, ICC-Profil und PDF/X-Standard der Druckerei fehlen.
