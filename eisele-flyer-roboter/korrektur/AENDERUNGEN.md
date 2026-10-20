@@ -85,6 +85,6 @@ Hinweise: Seite 3 EIGENSCHAFTEN steht laut PDF in 7,6 pt (nicht 8,6 pt) und blei
 
 | Seite | alt | neu |
 |---|---|---|
-| 2 | Titel „NEUHEIT / SCHWENKKUPPLUNG“ | Titel „SCHWENKKUPPLUNG“ (Zeile „NEUHEIT“ entfernt, Lage unverändert) |
+| 2 | Titel „NEUHEIT / SCHWENKKUPPLUNG“ | Titel zweizeilig „SCHWENKKUPPLUNG / V0129-1850-040601“ (25 pt, wie Seiten 3–6) |
 
 Web-PDF: `final/Eisele_Flyer_Humanoide_Roboter_de_Web.pdf`. Druck-PDF: laut Auftraggeber nicht benötigt.

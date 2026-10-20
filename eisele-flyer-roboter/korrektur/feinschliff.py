@@ -145,8 +145,12 @@ for name, icon_box, texts, cx_new in (
 LOG.append((1, 'BAUWEISEN: Gruppen GERADE/WINKEL links gedrängt, rechts Leerfläche', 'Gruppen auf 1/4 und 3/4 der Blockbreite verteilt (Inhalt unverändert)'))
 
 # ================================================================== SEITE 2
-redact(2, core(find(2, 'NEUHEIT', near=(47, 31))['bbox']))
-LOG.append((2, 'Titel „NEUHEIT / SCHWENKKUPPLUNG“', 'Titel „SCHWENKKUPPLUNG“ (Zeile „NEUHEIT“ entfernt, Lage unverändert)'))
+t_neu = find(2, 'NEUHEIT', near=(47, 31))
+t_sk = find(2, 'SCHWENKKUPPLUNG', near=(47, 59))
+redact(2, core(t_neu['bbox']))
+move_span(2, t_sk, dy=t_neu['origin'][1] - t_sk['origin'][1])
+put(2, t_sk['origin'][0], t_sk['origin'][1], 'V0129-1850-040601', t_sk['size'], col(t_sk), True)
+LOG.append((2, 'Titel „NEUHEIT / SCHWENKKUPPLUNG“', 'Titel zweizeilig „SCHWENKKUPPLUNG / V0129-1850-040601“'))
 # Abbildung „Flanschseite“ oben rechts + Bildunterschrift entfernen
 redact(2, pymupdf.Rect(400, 135, 541, 256), 'img')
 for t in ('Flanschseite', 'V0129-1850-040601 · Ansicht von hinten'):
