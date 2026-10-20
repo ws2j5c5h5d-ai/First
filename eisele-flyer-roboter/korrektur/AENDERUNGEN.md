@@ -88,3 +88,13 @@ Hinweise: Seite 3 EIGENSCHAFTEN steht laut PDF in 7,6 pt (nicht 8,6 pt) und blei
 | 2 | Titel „NEUHEIT / SCHWENKKUPPLUNG“ | Titel zweizeilig „SCHWENKKUPPLUNG / V0129-1850-040601“ (25 pt, wie Seiten 3–6) |
 
 Web-PDF: `final/Eisele_Flyer_Humanoide_Roboter_de_Web.pdf`. Druck-PDF: laut Auftraggeber nicht benötigt.
+
+## Produktfotos aus dem Webshop
+
+| Seite | alt | neu |
+|---|---|---|
+| 1 | Kacheln 863-4218, 887-4218, VT5528-0202 (2x): Renderings | Fotos aus dem EISELE-Webshop, freigestellt (`infografik/freistellen.py`) |
+| 4 | Produktfoto VT5528-0202: Rendering | Webshop-Foto |
+| 5 | Produktfotos 863-4218, 887-4218: Renderings | Webshop-Fotos |
+
+Quelle: Screenshots der Shop-Seiten www.eisele-connectors.com/produkte/<Artikel> (Firecrawl), da pim.eisele.eu in dieser Umgebung gesperrt ist; Ausschnitte ca. 660 x 480 px in `quellen/produktbilder_shop/`.

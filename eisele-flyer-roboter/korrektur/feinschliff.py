@@ -402,6 +402,23 @@ for pno in range(1, len(doc) + 1):
             x -= w
         page.insert_text((x, y), text, fontname='hb' if bold else 'hr', fontsize=size, color=color)
 
+# ================================================================== Produktfotos aus dem Webshop (S. 4, 5)
+import io as _io
+from PIL import Image as _Image
+PROD = os.path.join(HERE, '..', 'infografik', 'produkte')
+for pno, near, name in ((4, (394, 123), 'p_vt5528'), (5, (199, 123), 'p_863'), (5, (405, 121), 'p_887')):
+    page = doc[pno - 1]
+    info = min(page.get_image_info(xrefs=True), key=lambda i: abs(i['bbox'][0] - near[0]) + abs(i['bbox'][1] - near[1]))
+    r = pymupdf.Rect(info['bbox'])
+    ph = _Image.open(os.path.join(PROD, name + '.png')).convert('RGBA')
+    W = int(max(ph.width, ph.height * r.width / r.height) * 1.06)
+    H = int(W * r.height / r.width)
+    canvas = _Image.new('RGBA', (W, H), (255, 255, 255, 0))
+    canvas.alpha_composite(ph, ((W - ph.width) // 2, (H - ph.height) // 2))
+    buf = _io.BytesIO(); canvas.save(buf, 'PNG')
+    page.replace_image(info['xref'], stream=buf.getvalue())
+    LOG.append((pno, f'Produktfoto {name[2:].upper()} (Flyer-Rendering)', 'Produktfoto aus dem EISELE-Webshop (freigestellt)'))
+
 doc.save(out, garbage=3, deflate=True)
 with open(os.path.join(HERE, 'aenderungsliste_feinschliff.tsv'), 'w') as f:
     for row in LOG:
