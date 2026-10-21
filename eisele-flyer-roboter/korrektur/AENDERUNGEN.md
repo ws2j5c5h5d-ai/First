@@ -98,3 +98,12 @@ Web-PDF: `final/Eisele_Flyer_Humanoide_Roboter_de_Web.pdf`. Druck-PDF: laut Auft
 | 5 | Produktfotos 863-4218, 887-4218: Renderings | Webshop-Fotos |
 
 Quelle: Screenshots der Shop-Seiten www.eisele-connectors.com/produkte/<Artikel> (Firecrawl), da pim.eisele.eu in dieser Umgebung gesperrt ist; Ausschnitte ca. 660 x 480 px in `quellen/produktbilder_shop/`.
+
+## Optionale Vorschläge umgesetzt
+
+| Seite | alt | neu |
+|---|---|---|
+| 1 | VT5528-0202 zweimal als Kachel (Brust; Hüfte/Knie) | eine Kachel rechts, Leitlinien zu Brust, Hüfte und Knie |
+| 1 | SA2113-1/-2 rechts zwischen den VT5528-Kacheln | links oben, Leitlinie zur Modulschnittstelle (Einbauort unverändert) |
+| 1 | BAUWEISEN-Icons klein | Icons 1,4-fach |
+| 2 | Unterzeile „V0129-1850-040601 / Schwenkkupplung“ unter dem Foto | entfernt (steht im Titel); Foto mittig gesetzt |

@@ -120,14 +120,18 @@ p.show_pdf_page(pymupdf.Rect(fx0 + 7, fy0 + 7, fx0 + 7 + TW, fy0 + 7 + TH), lg, 
 
 # 4) Callouts (Einbauorte wie zuvor geprüft)
 TX = 549
-m = R(523, 350)
-tile('p_vt5528', TX, 168, 17, 'VT5528-0202'); leader([(TX - 17, 168), (520, 168), m]); marker(*m)
+# SA2113 links oben (Kupplung + Stecknippel), Leitlinie zur Modulschnittstelle
 m = R(528, 438)
-tile('p_sa2113', TX, 225, 17, 'SA2113-1'); tile('p_sa2113_2', TX, 282, 17, 'SA2113-2')
-leader([(TX - 17, 225), (520, 225), (520, 282), (TX - 17, 282)]); leader([(520, 253.5), m]); marker(*m)
-mh, mk = R(568, 518), R(468, 700)
-tile('p_vt5528', TX, 345, 17, 'VT5528-0202')
-leader([(TX - 17, 345), (520, 345), mh]); leader([(520, 345), (520, 385), (mk[0] + 30, 385), mk]); marker(*mh); marker(*mk)
+tile('p_sa2113', 62, 175, 17, 'SA2113-1'); tile('p_sa2113_2', 112, 175, 17, 'SA2113-2')
+leader([(79, 175), (95, 175)]); leader([(129, 175), (150, 175), m]); marker(*m)
+# VT5528 einmal rechts, aufgefächert zu Brust, Hüfte und Knie
+mc, mh, mk = R(523, 350), R(568, 518), R(468, 700)
+tile('p_vt5528', TX, 262, 17, 'VT5528-0202')
+leader([(TX - 17, 262), (505, 262)])
+for mm in (mc, mh, mk):
+    leader([(505, 262), mm])
+for mm in (mc, mh, mk):
+    marker(*mm)
 m = R(171, 426)
 for i, (nm, lab) in enumerate((('p_863', '863-4218'), ('p_887', '887-4218'), ('p_529', '529-5018G'))):
     tile(nm, 62 + i * 50, 300, 17, lab)

@@ -140,9 +140,18 @@ for name, icon_box, texts, cx_new in (
     for sp in sps:
         move_span(1, sp, dx=dx)
     redact(1, icon_box, 'artonly')
-    fn, _ = copy_paths(1, icon_box, pymupdf.Matrix(1, 0, 0, 1, dx, 0))
+    # Icon 1,4-fach, unten verankert (Abstand zu den Beschriftungen bleibt), auf neue Spaltenmitte
+    _, ds_ = copy_paths(1, icon_box, pymupdf.Matrix(1, 1))
+    ib = pymupdf.Rect(ds_[0]['rect'])
+    for d_ in ds_:
+        ib |= d_['rect']
+    SC = 1.4
+    cxi = (ib.x0 + ib.x1) / 2
+    mat = pymupdf.Matrix(SC, 0, 0, SC, cxi + dx - SC * cxi, ib.y1 - SC * ib.y1)
+    fn, _ = copy_paths(1, icon_box, mat)
     after(1, fn)
-LOG.append((1, 'BAUWEISEN: Gruppen GERADE/WINKEL links gedrängt, rechts Leerfläche', 'Gruppen auf 1/4 und 3/4 der Blockbreite verteilt (Inhalt unverändert)'))
+LOG.append((1, 'BAUWEISEN: Gruppen GERADE/WINKEL links gedrängt, Icons klein, rechts Leerfläche',
+            'Gruppen auf 1/4 und 3/4 der Blockbreite verteilt, Icons 1,4-fach (Inhalt unverändert)'))
 
 # ================================================================== SEITE 2
 t_neu = find(2, 'NEUHEIT', near=(47, 31))
@@ -161,15 +170,16 @@ info = [i for i in src[1].get_image_info(xrefs=True) if abs(i['bbox'][0] - 181.5
 old = pymupdf.Rect(info['bbox'])
 redact(2, pymupdf.Rect(old.x0 + 8, old.y0 + 8, old.x1 - 8, old.y1 - 8), 'img')
 NH = 194.0
-new = pymupdf.Rect(190.0, 100.0, 190.0 + NH * old.width / old.height, 100.0 + NH)
+NW = NH * old.width / old.height
+NX = (148.0 + 555.0 - NW) / 2                  # mittig zwischen NEU-Plakette und rechtem Rand
+new = pymupdf.Rect(NX, 100.0, NX + NW, 100.0 + NH)
 after(2, lambda pg: pg.insert_image(new, xref=info['xref']))
 c1, c2 = find(2, 'V0129-1850-040601', near=(180, 259)), find(2, 'Schwenkkupplung', near=(180, 276))
 fl = find(2, 'Flanschseite', near=(466, 259)); fl2 = find(2, 'V0129-1850-040601 · Ansicht von hinten')
-for c, ref_ in ((c1, fl), (c2, fl2)):
+for c in (c1, c2):
     redact(2, core(c['bbox']))
-    put(2, ref_['bbox'][2], ref_['origin'][1], c['text'].strip(), c['size'], col(c), 'Bold' in c['font'], 'r')
-LOG.append((2, f'Produktfoto {old.width:.0f} × {old.height:.0f} pt, Bildunterschrift links darunter',
-            f'Produktfoto {new.width:.0f} × {new.height:.0f} pt (×{new.height / old.height:.2f}), Bildunterschrift rechtsbündig unten'))
+LOG.append((2, f'Produktfoto {old.width:.0f} × {old.height:.0f} pt, Bildunterschrift „V0129-1850-040601 / Schwenkkupplung“',
+            f'Produktfoto {new.width:.0f} × {new.height:.0f} pt (×{new.height / old.height:.2f}), Bildunterschrift entfernt (steht im Titel)'))
 # „Mittige Bohrung“ unter „Stirnseite“ entfernen
 redact(2, core(find(2, 'Mittige Bohrung', near=(47, 566))['bbox']))
 LOG.append((2, '„Mittige Bohrung“ unter Abbildung „Stirnseite“', '(entfernt; steht im Block SCHWENKKUPPLUNG)'))
